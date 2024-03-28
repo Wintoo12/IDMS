@@ -1,0 +1,402 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{FAB281EC-6836-4991-96C3-0EFBA5D2B76F}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>IDMS</RootNamespace>
+    <AssemblyName>IDMS</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Admin\Error.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin\Error.Designer.cs">
+      <DependentUpon>Error.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\GenerateReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin\GenerateReport.Designer.cs">
+      <DependentUpon>GenerateReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Manage Customer\ManageCustomer_UpdateForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin\Manage Customer\ManageCustomer_UpdateForm.Designer.cs">
+      <DependentUpon>ManageCustomer_UpdateForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Manage Customer\ManageCustomer_AddForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin\Manage Customer\ManageCustomer_AddForm.Designer.cs">
+      <DependentUpon>ManageCustomer_AddForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Manage Employee\ManageEmployee_AddForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin\Manage Employee\ManageEmployee_AddForm.Designer.cs">
+      <DependentUpon>ManageEmployee_AddForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Manage Employee\ManageEmployee_DailyAttendance.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin\Manage Employee\ManageEmployee_DailyAttendance.Designer.cs">
+      <DependentUpon>ManageEmployee_DailyAttendance.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Manage Employee\ManageEmployee_UpdateForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin\Manage Employee\ManageEmployee_UpdateForm.Designer.cs">
+      <DependentUpon>ManageEmployee_UpdateForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Manage Installation\ManageInstallation_AddForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin\Manage Installation\ManageInstallation_AddForm.Designer.cs">
+      <DependentUpon>ManageInstallation_AddForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Connection\Connection.cs" />
+    <Compile Include="Functions\Functions.cs" />
+    <Compile Include="Staff\Manage Customer\ManageCustomer_Staff.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Staff\Manage Customer\ManageCustomer_Staff.Designer.cs">
+      <DependentUpon>ManageCustomer_Staff.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Staff\Manage Installation\ManageInstallation_Staff.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Staff\Manage Installation\ManageInstallation_Staff.Designer.cs">
+      <DependentUpon>ManageInstallation_Staff.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Manage Installation\ManageInstallation_UpdateForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin\Manage Installation\ManageInstallation_UpdateForm.Designer.cs">
+      <DependentUpon>ManageInstallation_UpdateForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\ManageReservations.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin\ManageReservations.Designer.cs">
+      <DependentUpon>ManageReservations.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Manage Employee\ManageEmployee.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin\Manage Employee\ManageEmployee.Designer.cs">
+      <DependentUpon>ManageEmployee.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Manage Customer\ManageCustomer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin\Manage Customer\ManageCustomer.Designer.cs">
+      <DependentUpon>ManageCustomer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Manage Installation\ManageInstallation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin\Manage Installation\ManageInstallation.Designer.cs">
+      <DependentUpon>ManageInstallation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\ManageSupplies.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin\ManageSupplies.Designer.cs">
+      <DependentUpon>ManageSupplies.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\AdminDashboard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin\AdminDashboard.Designer.cs">
+      <DependentUpon>AdminDashboard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\ManageSupplies\ManageSupply_ViewStatusListAdmin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin\ManageSupplies\ManageSupply_ViewStatusListAdmin.Designer.cs">
+      <DependentUpon>ManageSupply_ViewStatusListAdmin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login.Designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\ManageSupplies\ManageSupply_AddForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin\ManageSupplies\ManageSupply_AddForm.Designer.cs">
+      <DependentUpon>ManageSupply_AddForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\ManageSupplies\ManageSupply_DashboardAdmin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin\ManageSupplies\ManageSupply_DashboardAdmin.Designer.cs">
+      <DependentUpon>ManageSupply_DashboardAdmin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Staff\Manage Supplies\ManageSupply_DashboardStaff.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Staff\Manage Supplies\ManageSupply_DashboardStaff.Designer.cs">
+      <DependentUpon>ManageSupply_DashboardStaff.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\ManageSupplies\ManageSupply_UpdateForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin\ManageSupplies\ManageSupply_UpdateForm.Designer.cs">
+      <DependentUpon>ManageSupply_UpdateForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Staff\Manage Supplies\ManageSupply_ViewStatusListStaff.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Staff\Manage Supplies\ManageSupply_ViewStatusListStaff.Designer.cs">
+      <DependentUpon>ManageSupply_ViewStatusListStaff.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Staff\StaffDashboard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Staff\StaffDashboard.Designer.cs">
+      <DependentUpon>StaffDashboard.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Admin\Error.resx">
+      <DependentUpon>Error.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin\GenerateReport.resx">
+      <DependentUpon>GenerateReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin\Manage Customer\ManageCustomer_AddForm.resx">
+      <DependentUpon>ManageCustomer_AddForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin\Manage Customer\ManageCustomer_UpdateForm.resx">
+      <DependentUpon>ManageCustomer_UpdateForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin\Manage Employee\ManageEmployee_AddForm.resx">
+      <DependentUpon>ManageEmployee_AddForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin\Manage Employee\ManageEmployee_DailyAttendance.resx">
+      <DependentUpon>ManageEmployee_DailyAttendance.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin\Manage Employee\ManageEmployee_UpdateForm.resx">
+      <DependentUpon>ManageEmployee_UpdateForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin\Manage Installation\ManageInstallation_AddForm.resx">
+      <DependentUpon>ManageInstallation_AddForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin\Manage Installation\ManageInstallation_UpdateForm.resx">
+      <DependentUpon>ManageInstallation_UpdateForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Staff\Manage Customer\ManageCustomer_Staff.resx">
+      <DependentUpon>ManageCustomer_Staff.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Staff\Manage Installation\ManageInstallation_Staff.resx">
+      <DependentUpon>ManageInstallation_Staff.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin\ManageReservations.resx">
+      <DependentUpon>ManageReservations.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin\Manage Employee\ManageEmployee.resx">
+      <DependentUpon>ManageEmployee.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin\Manage Customer\ManageCustomer.resx">
+      <DependentUpon>ManageCustomer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin\Manage Installation\ManageInstallation.resx">
+      <DependentUpon>ManageInstallation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin\ManageSupplies.resx">
+      <DependentUpon>ManageSupplies.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin\AdminDashboard.resx">
+      <DependentUpon>AdminDashboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin\ManageSupplies\ManageSupply_AddForm.resx">
+      <DependentUpon>ManageSupply_AddForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin\ManageSupplies\ManageSupply_DashboardAdmin.resx">
+      <DependentUpon>ManageSupply_DashboardAdmin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Staff\Manage Supplies\ManageSupply_DashboardStaff.resx">
+      <DependentUpon>ManageSupply_DashboardStaff.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin\ManageSupplies\ManageSupply_UpdateForm.resx">
+      <DependentUpon>ManageSupply_UpdateForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin\ManageSupplies\ManageSupply_ViewStatusListAdmin.resx">
+      <DependentUpon>ManageSupply_ViewStatusListAdmin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Staff\Manage Supplies\ManageSupply_ViewStatusListStaff.resx">
+      <DependentUpon>ManageSupply_ViewStatusListStaff.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Staff\StaffDashboard.resx">
+      <DependentUpon>StaffDashboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Untitled design %2829%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\input-onlinepngtools.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Untitled design %2831%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Untitled design %2833%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Untitled design %2840%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Untitled design %2841%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Untitled design %2842%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Untitled design %2844%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Untitled design %2845%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Untitled design %2846%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Untitled design %2848%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Untitled design %2849%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Untitled design %2850%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Untitled design %2851%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Untitled design %2853%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Untitled design %2854%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Untitled design %2852%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Untitled design %2855%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Untitled design %2856%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Untitled design %2857%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PHP.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PHP1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Untitled design %2858%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-show-password-27.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PHP %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PHP %283%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Untitled design %2859%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PHP %284%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PHP %285%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PHP %286%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PHP %287%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PHP %288%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Untitled design %2861%29.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
