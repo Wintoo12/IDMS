@@ -32,16 +32,18 @@
             this.panel8 = new System.Windows.Forms.Panel();
             this.panel9 = new System.Windows.Forms.Panel();
             this.panel10 = new System.Windows.Forms.Panel();
+            this.txtPhoneNumber = new System.Windows.Forms.TextBox();
+            this.txtSupplierName = new System.Windows.Forms.TextBox();
             this.textBox10 = new System.Windows.Forms.TextBox();
             this.textBox11 = new System.Windows.Forms.TextBox();
             this.textBox9 = new System.Windows.Forms.TextBox();
             this.textBox8 = new System.Windows.Forms.TextBox();
             this.comboBox2 = new System.Windows.Forms.ComboBox();
-            this.textBox7 = new System.Windows.Forms.TextBox();
+            this.txtProductName = new System.Windows.Forms.TextBox();
             this.vScrollBar1 = new System.Windows.Forms.VScrollBar();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.button4 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
+            this.btnAdd = new System.Windows.Forms.Button();
+            this.btnCancel = new System.Windows.Forms.Button();
             this.textBox6 = new System.Windows.Forms.TextBox();
             this.button2 = new System.Windows.Forms.Button();
             this.radioButton2 = new System.Windows.Forms.RadioButton();
@@ -97,11 +99,11 @@
             this.panel8.BackgroundImage = global::IDMS.Properties.Resources.Untitled_design__48_;
             this.panel8.Controls.Add(this.panel9);
             this.panel8.Controls.Add(this.comboBox2);
-            this.panel8.Controls.Add(this.textBox7);
+            this.panel8.Controls.Add(this.txtProductName);
             this.panel8.Controls.Add(this.vScrollBar1);
             this.panel8.Controls.Add(this.dataGridView1);
-            this.panel8.Controls.Add(this.button4);
-            this.panel8.Controls.Add(this.button3);
+            this.panel8.Controls.Add(this.btnAdd);
+            this.panel8.Controls.Add(this.btnCancel);
             this.panel8.Controls.Add(this.textBox6);
             this.panel8.Controls.Add(this.button2);
             this.panel8.Controls.Add(this.radioButton2);
@@ -132,6 +134,8 @@
             // panel10
             // 
             this.panel10.BackgroundImage = global::IDMS.Properties.Resources.Untitled_design__50_;
+            this.panel10.Controls.Add(this.txtPhoneNumber);
+            this.panel10.Controls.Add(this.txtSupplierName);
             this.panel10.Controls.Add(this.textBox10);
             this.panel10.Controls.Add(this.textBox11);
             this.panel10.Location = new System.Drawing.Point(0, 0);
@@ -139,6 +143,24 @@
             this.panel10.Size = new System.Drawing.Size(430, 98);
             this.panel10.TabIndex = 21;
             this.panel10.Visible = false;
+            // 
+            // txtPhoneNumber
+            // 
+            this.txtPhoneNumber.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtPhoneNumber.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtPhoneNumber.Location = new System.Drawing.Point(159, 61);
+            this.txtPhoneNumber.Name = "txtPhoneNumber";
+            this.txtPhoneNumber.Size = new System.Drawing.Size(258, 19);
+            this.txtPhoneNumber.TabIndex = 21;
+            // 
+            // txtSupplierName
+            // 
+            this.txtSupplierName.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtSupplierName.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtSupplierName.Location = new System.Drawing.Point(159, 18);
+            this.txtSupplierName.Name = "txtSupplierName";
+            this.txtSupplierName.Size = new System.Drawing.Size(258, 19);
+            this.txtSupplierName.TabIndex = 21;
             // 
             // textBox10
             // 
@@ -151,7 +173,6 @@
             this.textBox10.TabIndex = 20;
             this.textBox10.Text = "Phone Number ";
             this.textBox10.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            this.textBox10.TextChanged += new System.EventHandler(this.textBox10_TextChanged);
             // 
             // textBox11
             // 
@@ -201,14 +222,14 @@
             this.comboBox2.Size = new System.Drawing.Size(706, 28);
             this.comboBox2.TabIndex = 17;
             // 
-            // textBox7
+            // txtProductName
             // 
-            this.textBox7.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox7.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox7.Location = new System.Drawing.Point(227, 97);
-            this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(706, 24);
-            this.textBox7.TabIndex = 16;
+            this.txtProductName.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtProductName.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtProductName.Location = new System.Drawing.Point(227, 97);
+            this.txtProductName.Name = "txtProductName";
+            this.txtProductName.Size = new System.Drawing.Size(706, 24);
+            this.txtProductName.TabIndex = 16;
             // 
             // vScrollBar1
             // 
@@ -229,31 +250,33 @@
             this.dataGridView1.TabIndex = 14;
             this.dataGridView1.Visible = false;
             // 
-            // button4
+            // btnAdd
             // 
-            this.button4.BackColor = System.Drawing.Color.Transparent;
-            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button4.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button4.ForeColor = System.Drawing.Color.White;
-            this.button4.Location = new System.Drawing.Point(773, 564);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(171, 56);
-            this.button4.TabIndex = 11;
-            this.button4.Text = "Add to Stock";
-            this.button4.UseVisualStyleBackColor = false;
+            this.btnAdd.BackColor = System.Drawing.Color.Transparent;
+            this.btnAdd.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAdd.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAdd.ForeColor = System.Drawing.Color.White;
+            this.btnAdd.Location = new System.Drawing.Point(773, 564);
+            this.btnAdd.Name = "btnAdd";
+            this.btnAdd.Size = new System.Drawing.Size(171, 56);
+            this.btnAdd.TabIndex = 11;
+            this.btnAdd.Text = "Add to Stock";
+            this.btnAdd.UseVisualStyleBackColor = false;
+            this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
             // 
-            // button3
+            // btnCancel
             // 
-            this.button3.BackColor = System.Drawing.Color.Transparent;
-            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button3.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.ForeColor = System.Drawing.Color.White;
-            this.button3.Location = new System.Drawing.Point(589, 564);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(171, 56);
-            this.button3.TabIndex = 10;
-            this.button3.Text = "Cancel";
-            this.button3.UseVisualStyleBackColor = false;
+            this.btnCancel.BackColor = System.Drawing.Color.Transparent;
+            this.btnCancel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnCancel.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCancel.ForeColor = System.Drawing.Color.White;
+            this.btnCancel.Location = new System.Drawing.Point(589, 564);
+            this.btnCancel.Name = "btnCancel";
+            this.btnCancel.Size = new System.Drawing.Size(171, 56);
+            this.btnCancel.TabIndex = 10;
+            this.btnCancel.Text = "Cancel";
+            this.btnCancel.UseVisualStyleBackColor = false;
+            this.btnCancel.Click += new System.EventHandler(this.btnCancel_Click);
             // 
             // textBox6
             // 
@@ -316,7 +339,6 @@
             this.textBox5.Size = new System.Drawing.Size(150, 24);
             this.textBox5.TabIndex = 5;
             this.textBox5.Text = "Add New Stock";
-            this.textBox5.TextChanged += new System.EventHandler(this.textBox5_TextChanged);
             // 
             // textBox4
             // 
@@ -369,6 +391,7 @@
             // button1
             // 
             this.button1.BackgroundImage = global::IDMS.Properties.Resources.Untitled_design__49_;
+            this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.ForeColor = System.Drawing.Color.White;
@@ -700,11 +723,11 @@
         private System.Windows.Forms.TextBox textBox9;
         private System.Windows.Forms.TextBox textBox8;
         private System.Windows.Forms.ComboBox comboBox2;
-        private System.Windows.Forms.TextBox textBox7;
+        private System.Windows.Forms.TextBox txtProductName;
         private System.Windows.Forms.VScrollBar vScrollBar1;
         private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button btnAdd;
+        private System.Windows.Forms.Button btnCancel;
         private System.Windows.Forms.TextBox textBox6;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.RadioButton radioButton2;
@@ -740,5 +763,7 @@
         private System.Windows.Forms.Panel panel20;
         private System.Windows.Forms.Panel panel21;
         private System.Windows.Forms.Button btnLogout;
+        private System.Windows.Forms.TextBox txtSupplierName;
+        private System.Windows.Forms.TextBox txtPhoneNumber;
     }
 }

@@ -30,8 +30,7 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ManageSupply_ViewStatusListAdmin));
             this.panel8 = new System.Windows.Forms.Panel();
-            this.button2 = new System.Windows.Forms.Button();
-            this.panel9 = new System.Windows.Forms.Panel();
+            this.flowLayoutPanel2 = new System.Windows.Forms.FlowLayoutPanel();
             this.vScrollBar1 = new System.Windows.Forms.VScrollBar();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.panel12 = new System.Windows.Forms.Panel();
@@ -79,8 +78,7 @@
             // panel8
             // 
             this.panel8.BackgroundImage = global::IDMS.Properties.Resources.Untitled_design__57_;
-            this.panel8.Controls.Add(this.button2);
-            this.panel8.Controls.Add(this.panel9);
+            this.panel8.Controls.Add(this.flowLayoutPanel2);
             this.panel8.Controls.Add(this.vScrollBar1);
             this.panel8.Controls.Add(this.comboBox1);
             this.panel8.Controls.Add(this.panel12);
@@ -90,25 +88,12 @@
             this.panel8.Size = new System.Drawing.Size(980, 647);
             this.panel8.TabIndex = 5;
             // 
-            // button2
+            // flowLayoutPanel2
             // 
-            this.button2.BackgroundImage = global::IDMS.Properties.Resources.Untitled_design__41_;
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.ForeColor = System.Drawing.Color.White;
-            this.button2.Location = new System.Drawing.Point(433, 18);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(92, 32);
-            this.button2.TabIndex = 1;
-            this.button2.Text = "Restock";
-            this.button2.UseVisualStyleBackColor = true;
-            // 
-            // panel9
-            // 
-            this.panel9.Location = new System.Drawing.Point(28, 75);
-            this.panel9.Name = "panel9";
-            this.panel9.Size = new System.Drawing.Size(886, 540);
-            this.panel9.TabIndex = 9;
+            this.flowLayoutPanel2.Location = new System.Drawing.Point(18, 67);
+            this.flowLayoutPanel2.Name = "flowLayoutPanel2";
+            this.flowLayoutPanel2.Size = new System.Drawing.Size(905, 559);
+            this.flowLayoutPanel2.TabIndex = 9;
             // 
             // vScrollBar1
             // 
@@ -137,7 +122,6 @@
             this.panel12.Name = "panel12";
             this.panel12.Size = new System.Drawing.Size(315, 32);
             this.panel12.TabIndex = 7;
-            this.panel12.Paint += new System.Windows.Forms.PaintEventHandler(this.panel12_Paint);
             // 
             // textBox1
             // 
@@ -145,7 +129,7 @@
             this.textBox1.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox1.Location = new System.Drawing.Point(3, 3);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(142, 24);
+            this.textBox1.Size = new System.Drawing.Size(214, 24);
             this.textBox1.TabIndex = 0;
             // 
             // button1
@@ -463,6 +447,7 @@
             this.Name = "ManageSupply_ViewStatusListAdmin";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
+            this.Load += new System.EventHandler(this.ManageSupply_ViewStatusListAdmin_Load);
             this.panel8.ResumeLayout(false);
             this.panel8.PerformLayout();
             this.panel12.ResumeLayout(false);
@@ -492,8 +477,6 @@
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.VScrollBar vScrollBar1;
         private System.Windows.Forms.ComboBox comboBox1;
-        private System.Windows.Forms.Panel panel9;
-        private System.Windows.Forms.Button button2;
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.PictureBox pictureBox1;
@@ -516,5 +499,6 @@
         private System.Windows.Forms.Panel panel20;
         private System.Windows.Forms.Panel panel21;
         private System.Windows.Forms.Button btnLogout;
+        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel2;
     }
 }

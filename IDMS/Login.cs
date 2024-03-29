@@ -23,6 +23,11 @@ namespace IDMS
             InitializeComponent();
         }
 
+        public void panelHide()
+        {
+            Application.Restart();
+        }
+
         private void Login_Load(object sender, EventArgs e)
         {
             
@@ -104,12 +109,11 @@ namespace IDMS
                             loginFormBackground.BackColor = Color.Black;
                             loginFormBackground.Location = this.Location;
                             loginFormBackground.ShowInTaskbar = false;
-                            //pnlError.BackColor = Color.FromArgb(100, 0, 0, 0);
-                            //pnlError.Visible = true;
-                            //pnlError.Location = new Point(3, 1);
+                            pnlError.BackColor = Color.FromArgb(100, 0, 0, 0);
+                            pnlError.Visible = true;
+                            pnlError.Location = new Point(3, 1);
                             //loginFormBackground.Show();
-                            Login login = new Login();
-                            login.Enabled = false;
+                            
                             //error.Owner = loginFormBackground;
                             error.ShowDialog();
                             loginFormBackground.Dispose();

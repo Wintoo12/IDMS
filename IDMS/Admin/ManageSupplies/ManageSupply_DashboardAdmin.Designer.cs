@@ -34,7 +34,6 @@
             this.customerTimer = new System.Windows.Forms.Timer(this.components);
             this.employeesTimer = new System.Windows.Forms.Timer(this.components);
             this.reportsTimer = new System.Windows.Forms.Timer(this.components);
-            this.fileSystemWatcher1 = new System.IO.FileSystemWatcher();
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
             this.panel1 = new System.Windows.Forms.Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
@@ -85,15 +84,15 @@
             this.label8 = new System.Windows.Forms.Label();
             this.panel10 = new System.Windows.Forms.Panel();
             this.panel8 = new System.Windows.Forms.Panel();
+            this.flowLayoutPanel2 = new System.Windows.Forms.FlowLayoutPanel();
             this.btnAddSupplies = new System.Windows.Forms.Button();
             this.vScrollBar1 = new System.Windows.Forms.VScrollBar();
             this.panel12 = new System.Windows.Forms.Panel();
             this.btnSearch = new System.Windows.Forms.Button();
             this.txtSearch = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
-            this.panel11 = new System.Windows.Forms.Panel();
             this.panel7 = new System.Windows.Forms.Panel();
-            ((System.ComponentModel.ISupportInitialize)(this.fileSystemWatcher1)).BeginInit();
+            this.lblProductDetails = new System.Windows.Forms.Label();
             this.flowLayoutPanel1.SuspendLayout();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -120,6 +119,7 @@
             this.panel19.SuspendLayout();
             this.panel21.SuspendLayout();
             this.panel9.SuspendLayout();
+            this.panel10.SuspendLayout();
             this.panel8.SuspendLayout();
             this.panel12.SuspendLayout();
             this.SuspendLayout();
@@ -143,11 +143,6 @@
             // 
             this.reportsTimer.Interval = 5;
             this.reportsTimer.Tick += new System.EventHandler(this.reportsTimer_Tick);
-            // 
-            // fileSystemWatcher1
-            // 
-            this.fileSystemWatcher1.EnableRaisingEvents = true;
-            this.fileSystemWatcher1.SynchronizingObject = this;
             // 
             // flowLayoutPanel1
             // 
@@ -761,6 +756,7 @@
             // 
             // panel10
             // 
+            this.panel10.Controls.Add(this.lblProductDetails);
             this.panel10.Location = new System.Drawing.Point(20, 58);
             this.panel10.Name = "panel10";
             this.panel10.Size = new System.Drawing.Size(320, 569);
@@ -769,15 +765,22 @@
             // panel8
             // 
             this.panel8.BackgroundImage = global::IDMS.Properties.Resources.Untitled_design__45_;
+            this.panel8.Controls.Add(this.flowLayoutPanel2);
             this.panel8.Controls.Add(this.btnAddSupplies);
             this.panel8.Controls.Add(this.vScrollBar1);
             this.panel8.Controls.Add(this.panel12);
             this.panel8.Controls.Add(this.label7);
-            this.panel8.Controls.Add(this.panel11);
             this.panel8.Location = new System.Drawing.Point(272, 64);
             this.panel8.Name = "panel8";
-            this.panel8.Size = new System.Drawing.Size(595, 647);
+            this.panel8.Size = new System.Drawing.Size(596, 647);
             this.panel8.TabIndex = 4;
+            // 
+            // flowLayoutPanel2
+            // 
+            this.flowLayoutPanel2.Location = new System.Drawing.Point(17, 58);
+            this.flowLayoutPanel2.Name = "flowLayoutPanel2";
+            this.flowLayoutPanel2.Size = new System.Drawing.Size(541, 569);
+            this.flowLayoutPanel2.TabIndex = 6;
             // 
             // btnAddSupplies
             // 
@@ -848,13 +851,6 @@
             this.label7.TabIndex = 4;
             this.label7.Text = "SUPPLIES LIST";
             // 
-            // panel11
-            // 
-            this.panel11.Location = new System.Drawing.Point(16, 58);
-            this.panel11.Name = "panel11";
-            this.panel11.Size = new System.Drawing.Size(536, 569);
-            this.panel11.TabIndex = 1;
-            // 
             // panel7
             // 
             this.panel7.BackgroundImage = global::IDMS.Properties.Resources.Untitled_design__29_;
@@ -862,6 +858,16 @@
             this.panel7.Name = "panel7";
             this.panel7.Size = new System.Drawing.Size(1033, 43);
             this.panel7.TabIndex = 3;
+            // 
+            // lblProductDetails
+            // 
+            this.lblProductDetails.AutoSize = true;
+            this.lblProductDetails.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblProductDetails.Location = new System.Drawing.Point(133, 203);
+            this.lblProductDetails.Name = "lblProductDetails";
+            this.lblProductDetails.Size = new System.Drawing.Size(65, 22);
+            this.lblProductDetails.TabIndex = 0;
+            this.lblProductDetails.Text = "label3";
             // 
             // ManageSupply_DashboardAdmin
             // 
@@ -878,7 +884,6 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "ManageSupply_Dashboard";
             this.Load += new System.EventHandler(this.ManageSupply_DashboardAdmin_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.fileSystemWatcher1)).EndInit();
             this.flowLayoutPanel1.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
@@ -907,6 +912,8 @@
             this.panel21.ResumeLayout(false);
             this.panel9.ResumeLayout(false);
             this.panel9.PerformLayout();
+            this.panel10.ResumeLayout(false);
+            this.panel10.PerformLayout();
             this.panel8.ResumeLayout(false);
             this.panel8.PerformLayout();
             this.panel12.ResumeLayout(false);
@@ -917,7 +924,6 @@
 
         #endregion
         private System.Windows.Forms.Panel panel7;
-        private System.Windows.Forms.Panel panel11;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Panel panel12;
         private System.Windows.Forms.TextBox txtSearch;
@@ -978,6 +984,7 @@
         private System.Windows.Forms.Timer reportsTimer;
         private System.Windows.Forms.Button btnAddSupplies;
         private System.Windows.Forms.Button btnSearch;
-        private System.IO.FileSystemWatcher fileSystemWatcher1;
+        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel2;
+        private System.Windows.Forms.Label lblProductDetails;
     }
 }

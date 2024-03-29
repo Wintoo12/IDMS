@@ -40,7 +40,6 @@
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();
             this.label7 = new System.Windows.Forms.Label();
-            this.panel11 = new System.Windows.Forms.Panel();
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
             this.panel1 = new System.Windows.Forms.Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
@@ -63,7 +62,10 @@
             this.panel20 = new System.Windows.Forms.Panel();
             this.panel21 = new System.Windows.Forms.Panel();
             this.btnLogout = new System.Windows.Forms.Button();
+            this.flowLayoutPanel2 = new System.Windows.Forms.FlowLayoutPanel();
+            this.lblProductDetails = new System.Windows.Forms.Label();
             this.panel9.SuspendLayout();
+            this.panel10.SuspendLayout();
             this.panel8.SuspendLayout();
             this.panel12.SuspendLayout();
             this.flowLayoutPanel1.SuspendLayout();
@@ -113,6 +115,7 @@
             // 
             // panel10
             // 
+            this.panel10.Controls.Add(this.lblProductDetails);
             this.panel10.Location = new System.Drawing.Point(20, 58);
             this.panel10.Name = "panel10";
             this.panel10.Size = new System.Drawing.Size(320, 569);
@@ -121,11 +124,11 @@
             // panel8
             // 
             this.panel8.BackgroundImage = global::IDMS.Properties.Resources.Untitled_design__45_;
+            this.panel8.Controls.Add(this.flowLayoutPanel2);
             this.panel8.Controls.Add(this.btnAddForm);
             this.panel8.Controls.Add(this.vScrollBar1);
             this.panel8.Controls.Add(this.panel12);
             this.panel8.Controls.Add(this.label7);
-            this.panel8.Controls.Add(this.panel11);
             this.panel8.Location = new System.Drawing.Point(272, 64);
             this.panel8.Name = "panel8";
             this.panel8.Size = new System.Drawing.Size(595, 647);
@@ -147,7 +150,7 @@
             // 
             // vScrollBar1
             // 
-            this.vScrollBar1.Location = new System.Drawing.Point(561, 58);
+            this.vScrollBar1.Location = new System.Drawing.Point(568, 58);
             this.vScrollBar1.Name = "vScrollBar1";
             this.vScrollBar1.Size = new System.Drawing.Size(17, 569);
             this.vScrollBar1.TabIndex = 5;
@@ -197,20 +200,13 @@
             this.label7.TabIndex = 4;
             this.label7.Text = "PACKAGE LIST";
             // 
-            // panel11
-            // 
-            this.panel11.Location = new System.Drawing.Point(16, 58);
-            this.panel11.Name = "panel11";
-            this.panel11.Size = new System.Drawing.Size(536, 569);
-            this.panel11.TabIndex = 1;
-            // 
             // flowLayoutPanel1
             // 
             this.flowLayoutPanel1.BackgroundImage = global::IDMS.Properties.Resources.Untitled_design__61_;
             this.flowLayoutPanel1.Controls.Add(this.panel1);
             this.flowLayoutPanel1.Controls.Add(this.panel13);
-            this.flowLayoutPanel1.Controls.Add(this.panel14);
             this.flowLayoutPanel1.Controls.Add(this.panel15);
+            this.flowLayoutPanel1.Controls.Add(this.panel14);
             this.flowLayoutPanel1.Controls.Add(this.panel16);
             this.flowLayoutPanel1.Controls.Add(this.panel17);
             this.flowLayoutPanel1.Controls.Add(this.panel18);
@@ -303,7 +299,7 @@
             // 
             this.panel14.BackColor = System.Drawing.Color.Transparent;
             this.panel14.Controls.Add(this.btnSupplies);
-            this.panel14.Location = new System.Drawing.Point(3, 267);
+            this.panel14.Location = new System.Drawing.Point(3, 310);
             this.panel14.Name = "panel14";
             this.panel14.Size = new System.Drawing.Size(247, 36);
             this.panel14.TabIndex = 0;
@@ -327,7 +323,7 @@
             // 
             this.panel15.BackColor = System.Drawing.Color.Transparent;
             this.panel15.Controls.Add(this.btnInstallations);
-            this.panel15.Location = new System.Drawing.Point(3, 309);
+            this.panel15.Location = new System.Drawing.Point(3, 267);
             this.panel15.Name = "panel15";
             this.panel15.Size = new System.Drawing.Size(247, 37);
             this.panel15.TabIndex = 0;
@@ -475,6 +471,23 @@
             this.btnLogout.Text = "LOGOUT";
             this.btnLogout.UseVisualStyleBackColor = true;
             // 
+            // flowLayoutPanel2
+            // 
+            this.flowLayoutPanel2.Location = new System.Drawing.Point(15, 55);
+            this.flowLayoutPanel2.Name = "flowLayoutPanel2";
+            this.flowLayoutPanel2.Size = new System.Drawing.Size(546, 572);
+            this.flowLayoutPanel2.TabIndex = 7;
+            // 
+            // lblProductDetails
+            // 
+            this.lblProductDetails.AutoSize = true;
+            this.lblProductDetails.Font = new System.Drawing.Font("Century Gothic", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblProductDetails.Location = new System.Drawing.Point(70, 108);
+            this.lblProductDetails.Name = "lblProductDetails";
+            this.lblProductDetails.Size = new System.Drawing.Size(102, 36);
+            this.lblProductDetails.TabIndex = 0;
+            this.lblProductDetails.Text = "label3";
+            // 
             // ManageInstallation
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -491,6 +504,8 @@
             this.Load += new System.EventHandler(this.ManageInstallation_Load);
             this.panel9.ResumeLayout(false);
             this.panel9.PerformLayout();
+            this.panel10.ResumeLayout(false);
+            this.panel10.PerformLayout();
             this.panel8.ResumeLayout(false);
             this.panel8.PerformLayout();
             this.panel12.ResumeLayout(false);
@@ -522,7 +537,6 @@
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.Panel panel11;
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.PictureBox pictureBox1;
@@ -546,5 +560,7 @@
         private System.Windows.Forms.Panel panel21;
         private System.Windows.Forms.Button btnLogout;
         private System.Windows.Forms.Button btnAddForm;
+        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel2;
+        private System.Windows.Forms.Label lblProductDetails;
     }
 }
