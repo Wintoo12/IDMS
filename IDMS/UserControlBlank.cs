@@ -8,20 +8,13 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace IDMS.Admin
+namespace IDMS
 {
-    public partial class ManageSupplies: Form
+    public partial class UserControlBlank : UserControl
     {
-        public ManageSupplies()
+        public UserControlBlank()
         {
             InitializeComponent();
-        }
-
-        private void btnLogout_Click(object sender, EventArgs e)
-        {
-            this.Hide();
-            Login login = new Login();
-            login.Show();
         }
     }
 }

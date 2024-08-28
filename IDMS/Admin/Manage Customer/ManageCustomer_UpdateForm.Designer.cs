@@ -30,18 +30,27 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ManageCustomer_UpdateForm));
             this.panel8 = new System.Windows.Forms.Panel();
-            this.radioButton2 = new System.Windows.Forms.RadioButton();
-            this.radioButton1 = new System.Windows.Forms.RadioButton();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox12 = new System.Windows.Forms.TextBox();
-            this.textBox11 = new System.Windows.Forms.TextBox();
-            this.textBox8 = new System.Windows.Forms.TextBox();
-            this.button4 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.txtCustomerID = new System.Windows.Forms.TextBox();
+            this.txtFilename = new System.Windows.Forms.TextBox();
+            this.txtFB_acnt = new System.Windows.Forms.TextBox();
+            this.txtContactNum = new System.Windows.Forms.TextBox();
+            this.txtLName = new System.Windows.Forms.TextBox();
+            this.txtMName = new System.Windows.Forms.TextBox();
+            this.txtMunicipality = new System.Windows.Forms.TextBox();
+            this.txtBarangay = new System.Windows.Forms.TextBox();
+            this.txtFName = new System.Windows.Forms.TextBox();
+            this.btnBrowse = new System.Windows.Forms.Button();
+            this.label7 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label8 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.rbtnInactive = new System.Windows.Forms.RadioButton();
+            this.rbtnActive = new System.Windows.Forms.RadioButton();
+            this.pcboxCustomerPhoto = new System.Windows.Forms.PictureBox();
+            this.btnUpdate = new System.Windows.Forms.Button();
+            this.btnCancel = new System.Windows.Forms.Button();
             this.panel7 = new System.Windows.Forms.Panel();
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
             this.panel1 = new System.Windows.Forms.Panel();
@@ -56,8 +65,6 @@
             this.btnCustomers = new System.Windows.Forms.Button();
             this.panel16 = new System.Windows.Forms.Panel();
             this.btnEmployees = new System.Windows.Forms.Button();
-            this.panel17 = new System.Windows.Forms.Panel();
-            this.btnReports = new System.Windows.Forms.Button();
             this.panel18 = new System.Windows.Forms.Panel();
             this.button1 = new System.Windows.Forms.Button();
             this.panel19 = new System.Windows.Forms.Panel();
@@ -66,7 +73,7 @@
             this.panel21 = new System.Windows.Forms.Panel();
             this.btnLogout = new System.Windows.Forms.Button();
             this.panel8.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pcboxCustomerPhoto)).BeginInit();
             this.flowLayoutPanel1.SuspendLayout();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -74,7 +81,6 @@
             this.panel14.SuspendLayout();
             this.panel15.SuspendLayout();
             this.panel16.SuspendLayout();
-            this.panel17.SuspendLayout();
             this.panel18.SuspendLayout();
             this.panel19.SuspendLayout();
             this.panel21.SuspendLayout();
@@ -82,178 +88,280 @@
             // 
             // panel8
             // 
-            this.panel8.BackgroundImage = global::IDMS.Properties.Resources.PHP__4_;
-            this.panel8.Controls.Add(this.radioButton2);
-            this.panel8.Controls.Add(this.radioButton1);
-            this.panel8.Controls.Add(this.pictureBox2);
-            this.panel8.Controls.Add(this.textBox1);
-            this.panel8.Controls.Add(this.textBox12);
-            this.panel8.Controls.Add(this.textBox11);
-            this.panel8.Controls.Add(this.textBox8);
-            this.panel8.Controls.Add(this.button4);
-            this.panel8.Controls.Add(this.button3);
-            this.panel8.Controls.Add(this.button2);
-            this.panel8.Controls.Add(this.textBox5);
-            this.panel8.Controls.Add(this.textBox3);
+            this.panel8.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel8.BackgroundImage")));
+            this.panel8.Controls.Add(this.txtCustomerID);
+            this.panel8.Controls.Add(this.txtFilename);
+            this.panel8.Controls.Add(this.txtFB_acnt);
+            this.panel8.Controls.Add(this.txtContactNum);
+            this.panel8.Controls.Add(this.txtLName);
+            this.panel8.Controls.Add(this.txtMName);
+            this.panel8.Controls.Add(this.txtMunicipality);
+            this.panel8.Controls.Add(this.txtBarangay);
+            this.panel8.Controls.Add(this.txtFName);
+            this.panel8.Controls.Add(this.btnBrowse);
+            this.panel8.Controls.Add(this.label7);
+            this.panel8.Controls.Add(this.label6);
+            this.panel8.Controls.Add(this.label5);
+            this.panel8.Controls.Add(this.label4);
+            this.panel8.Controls.Add(this.label8);
+            this.panel8.Controls.Add(this.label3);
+            this.panel8.Controls.Add(this.rbtnInactive);
+            this.panel8.Controls.Add(this.rbtnActive);
+            this.panel8.Controls.Add(this.pcboxCustomerPhoto);
+            this.panel8.Controls.Add(this.btnUpdate);
+            this.panel8.Controls.Add(this.btnCancel);
             this.panel8.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.panel8.Location = new System.Drawing.Point(272, 66);
             this.panel8.Name = "panel8";
             this.panel8.Size = new System.Drawing.Size(985, 651);
             this.panel8.TabIndex = 15;
-            this.panel8.Paint += new System.Windows.Forms.PaintEventHandler(this.panel8_Paint);
             // 
-            // radioButton2
+            // txtCustomerID
             // 
-            this.radioButton2.AutoSize = true;
-            this.radioButton2.BackColor = System.Drawing.Color.White;
-            this.radioButton2.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButton2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(120)))), ((int)(((byte)(165)))), ((int)(((byte)(254)))));
-            this.radioButton2.Location = new System.Drawing.Point(205, 584);
-            this.radioButton2.Name = "radioButton2";
-            this.radioButton2.Size = new System.Drawing.Size(111, 29);
-            this.radioButton2.TabIndex = 27;
-            this.radioButton2.TabStop = true;
-            this.radioButton2.Text = "inactive";
-            this.radioButton2.UseVisualStyleBackColor = false;
+            this.txtCustomerID.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtCustomerID.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtCustomerID.Location = new System.Drawing.Point(47, 314);
+            this.txtCustomerID.Name = "txtCustomerID";
+            this.txtCustomerID.Size = new System.Drawing.Size(104, 24);
+            this.txtCustomerID.TabIndex = 46;
+            this.txtCustomerID.Visible = false;
             // 
-            // radioButton1
+            // txtFilename
             // 
-            this.radioButton1.AutoSize = true;
-            this.radioButton1.BackColor = System.Drawing.Color.White;
-            this.radioButton1.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButton1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(120)))), ((int)(((byte)(165)))), ((int)(((byte)(254)))));
-            this.radioButton1.Location = new System.Drawing.Point(47, 584);
-            this.radioButton1.Name = "radioButton1";
-            this.radioButton1.Size = new System.Drawing.Size(93, 29);
-            this.radioButton1.TabIndex = 26;
-            this.radioButton1.TabStop = true;
-            this.radioButton1.Text = "active";
-            this.radioButton1.UseVisualStyleBackColor = false;
+            this.txtFilename.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtFilename.Enabled = false;
+            this.txtFilename.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtFilename.Location = new System.Drawing.Point(343, 493);
+            this.txtFilename.Name = "txtFilename";
+            this.txtFilename.Size = new System.Drawing.Size(453, 24);
+            this.txtFilename.TabIndex = 38;
             // 
-            // pictureBox2
+            // txtFB_acnt
             // 
-            this.pictureBox2.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox2.Location = new System.Drawing.Point(391, 39);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(203, 173);
-            this.pictureBox2.TabIndex = 25;
-            this.pictureBox2.TabStop = false;
+            this.txtFB_acnt.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtFB_acnt.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtFB_acnt.Location = new System.Drawing.Point(342, 450);
+            this.txtFB_acnt.Name = "txtFB_acnt";
+            this.txtFB_acnt.Size = new System.Drawing.Size(582, 24);
+            this.txtFB_acnt.TabIndex = 39;
             // 
-            // textBox1
+            // txtContactNum
             // 
-            this.textBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(148)))), ((int)(((byte)(190)))), ((int)(((byte)(255)))));
-            this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox1.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.ForeColor = System.Drawing.Color.White;
-            this.textBox1.Location = new System.Drawing.Point(157, 316);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(159, 24);
-            this.textBox1.TabIndex = 24;
-            this.textBox1.Text = "NAME";
-            this.textBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.txtContactNum.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtContactNum.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtContactNum.Location = new System.Drawing.Point(339, 405);
+            this.txtContactNum.Name = "txtContactNum";
+            this.txtContactNum.Size = new System.Drawing.Size(319, 24);
+            this.txtContactNum.TabIndex = 40;
             // 
-            // textBox12
+            // txtLName
             // 
-            this.textBox12.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(134)))), ((int)(((byte)(177)))), ((int)(((byte)(254)))));
-            this.textBox12.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox12.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox12.ForeColor = System.Drawing.Color.White;
-            this.textBox12.Location = new System.Drawing.Point(151, 449);
-            this.textBox12.Name = "textBox12";
-            this.textBox12.Size = new System.Drawing.Size(165, 24);
-            this.textBox12.TabIndex = 23;
-            this.textBox12.Text = "FACEBOOK NAME";
-            this.textBox12.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.txtLName.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtLName.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtLName.ForeColor = System.Drawing.Color.Black;
+            this.txtLName.Location = new System.Drawing.Point(686, 315);
+            this.txtLName.Name = "txtLName";
+            this.txtLName.Size = new System.Drawing.Size(245, 24);
+            this.txtLName.TabIndex = 41;
+            this.txtLName.Click += new System.EventHandler(this.txtLName_Click);
+            this.txtLName.Leave += new System.EventHandler(this.txtLName_Leave);
             // 
-            // textBox11
+            // txtMName
             // 
-            this.textBox11.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(181)))), ((int)(((byte)(254)))));
-            this.textBox11.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox11.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox11.ForeColor = System.Drawing.Color.White;
-            this.textBox11.Location = new System.Drawing.Point(180, 408);
-            this.textBox11.Name = "textBox11";
-            this.textBox11.Size = new System.Drawing.Size(136, 24);
-            this.textBox11.TabIndex = 23;
-            this.textBox11.Text = "CONTACT NO";
-            this.textBox11.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.txtMName.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtMName.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtMName.Location = new System.Drawing.Point(596, 315);
+            this.txtMName.Name = "txtMName";
+            this.txtMName.Size = new System.Drawing.Size(56, 24);
+            this.txtMName.TabIndex = 42;
             // 
-            // textBox8
+            // txtMunicipality
             // 
-            this.textBox8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(143)))), ((int)(((byte)(186)))), ((int)(((byte)(255)))));
-            this.textBox8.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox8.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox8.ForeColor = System.Drawing.Color.White;
-            this.textBox8.Location = new System.Drawing.Point(180, 363);
-            this.textBox8.Name = "textBox8";
-            this.textBox8.Size = new System.Drawing.Size(136, 24);
-            this.textBox8.TabIndex = 20;
-            this.textBox8.Text = "ADDRESS";
-            this.textBox8.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.txtMunicipality.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtMunicipality.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtMunicipality.ForeColor = System.Drawing.Color.Black;
+            this.txtMunicipality.Location = new System.Drawing.Point(686, 360);
+            this.txtMunicipality.Name = "txtMunicipality";
+            this.txtMunicipality.Size = new System.Drawing.Size(245, 24);
+            this.txtMunicipality.TabIndex = 43;
+            this.txtMunicipality.Click += new System.EventHandler(this.txtMunicipality_Click);
+            this.txtMunicipality.Leave += new System.EventHandler(this.txtMunicipality_Leave);
             // 
-            // button4
+            // txtBarangay
             // 
-            this.button4.BackColor = System.Drawing.Color.Transparent;
-            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button4.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button4.ForeColor = System.Drawing.Color.White;
-            this.button4.Location = new System.Drawing.Point(784, 572);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(172, 54);
-            this.button4.TabIndex = 11;
-            this.button4.Text = "Add Package";
-            this.button4.UseVisualStyleBackColor = false;
+            this.txtBarangay.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtBarangay.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtBarangay.ForeColor = System.Drawing.Color.Black;
+            this.txtBarangay.Location = new System.Drawing.Point(339, 360);
+            this.txtBarangay.Name = "txtBarangay";
+            this.txtBarangay.Size = new System.Drawing.Size(319, 24);
+            this.txtBarangay.TabIndex = 44;
+            this.txtBarangay.Click += new System.EventHandler(this.txtBarangay_Click);
+            this.txtBarangay.Leave += new System.EventHandler(this.txtBarangay_Leave);
             // 
-            // button3
+            // txtFName
             // 
-            this.button3.BackColor = System.Drawing.Color.Transparent;
-            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button3.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.ForeColor = System.Drawing.Color.White;
-            this.button3.Location = new System.Drawing.Point(594, 572);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(173, 54);
-            this.button3.TabIndex = 10;
-            this.button3.Text = "Cancel";
-            this.button3.UseVisualStyleBackColor = false;
+            this.txtFName.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtFName.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtFName.ForeColor = System.Drawing.Color.Black;
+            this.txtFName.Location = new System.Drawing.Point(342, 315);
+            this.txtFName.Name = "txtFName";
+            this.txtFName.Size = new System.Drawing.Size(219, 24);
+            this.txtFName.TabIndex = 45;
+            this.txtFName.Click += new System.EventHandler(this.txtFName_Click);
+            this.txtFName.Leave += new System.EventHandler(this.txtFName_Leave);
             // 
-            // button2
+            // btnBrowse
             // 
-            this.button2.BackColor = System.Drawing.Color.Transparent;
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.ForeColor = System.Drawing.Color.White;
-            this.button2.Location = new System.Drawing.Point(801, 490);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(129, 30);
-            this.button2.TabIndex = 8;
-            this.button2.Text = "browse";
-            this.button2.UseVisualStyleBackColor = false;
+            this.btnBrowse.BackColor = System.Drawing.Color.Transparent;
+            this.btnBrowse.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnBrowse.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnBrowse.ForeColor = System.Drawing.Color.White;
+            this.btnBrowse.Location = new System.Drawing.Point(802, 490);
+            this.btnBrowse.Name = "btnBrowse";
+            this.btnBrowse.Size = new System.Drawing.Size(129, 30);
+            this.btnBrowse.TabIndex = 37;
+            this.btnBrowse.Text = "browse";
+            this.btnBrowse.UseVisualStyleBackColor = false;
+            this.btnBrowse.Click += new System.EventHandler(this.btnBrowse_Click);
             // 
-            // textBox5
+            // label7
             // 
-            this.textBox5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(154)))), ((int)(((byte)(196)))), ((int)(((byte)(254)))));
-            this.textBox5.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox5.Font = new System.Drawing.Font("Century Gothic", 26.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox5.ForeColor = System.Drawing.Color.White;
-            this.textBox5.Location = new System.Drawing.Point(287, 229);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(410, 43);
-            this.textBox5.TabIndex = 5;
-            this.textBox5.Text = "UPDATE CUSTOMER INFO";
+            this.label7.AutoSize = true;
+            this.label7.BackColor = System.Drawing.Color.Transparent;
+            this.label7.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.ForeColor = System.Drawing.Color.Transparent;
+            this.label7.Location = new System.Drawing.Point(137, 492);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(179, 23);
+            this.label7.TabIndex = 36;
+            this.label7.Text = "CUSTOMER PHOTO";
             // 
-            // textBox3
+            // label6
             // 
-            this.textBox3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(129)))), ((int)(((byte)(173)))), ((int)(((byte)(254)))));
-            this.textBox3.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox3.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox3.ForeColor = System.Drawing.Color.White;
-            this.textBox3.Location = new System.Drawing.Point(141, 493);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(175, 24);
-            this.textBox3.TabIndex = 3;
-            this.textBox3.Text = "CUSTOMER PHOTO";
-            this.textBox3.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.label6.AutoSize = true;
+            this.label6.BackColor = System.Drawing.Color.Transparent;
+            this.label6.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.ForeColor = System.Drawing.Color.White;
+            this.label6.Location = new System.Drawing.Point(143, 447);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(173, 23);
+            this.label6.TabIndex = 35;
+            this.label6.Text = "FACEBOOK NAME";
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.BackColor = System.Drawing.Color.Transparent;
+            this.label5.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.ForeColor = System.Drawing.Color.White;
+            this.label5.Location = new System.Drawing.Point(168, 402);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(148, 23);
+            this.label5.TabIndex = 34;
+            this.label5.Text = "CONTATCT NO.";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.BackColor = System.Drawing.Color.Transparent;
+            this.label4.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.ForeColor = System.Drawing.Color.White;
+            this.label4.Location = new System.Drawing.Point(225, 359);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(91, 23);
+            this.label4.TabIndex = 33;
+            this.label4.Text = "ADDRESS";
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.BackColor = System.Drawing.Color.Transparent;
+            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold);
+            this.label8.ForeColor = System.Drawing.Color.White;
+            this.label8.Location = new System.Drawing.Point(246, 314);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(70, 24);
+            this.label8.TabIndex = 32;
+            this.label8.Text = "NAME";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.BackColor = System.Drawing.Color.Transparent;
+            this.label3.Font = new System.Drawing.Font("Century Gothic", 26.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.Color.White;
+            this.label3.Location = new System.Drawing.Point(282, 226);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(426, 41);
+            this.label3.TabIndex = 28;
+            this.label3.Text = "UPDATE CUSTOMER INFO";
+            // 
+            // rbtnInactive
+            // 
+            this.rbtnInactive.AutoSize = true;
+            this.rbtnInactive.BackColor = System.Drawing.Color.White;
+            this.rbtnInactive.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rbtnInactive.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(120)))), ((int)(((byte)(165)))), ((int)(((byte)(254)))));
+            this.rbtnInactive.Location = new System.Drawing.Point(205, 584);
+            this.rbtnInactive.Name = "rbtnInactive";
+            this.rbtnInactive.Size = new System.Drawing.Size(112, 29);
+            this.rbtnInactive.TabIndex = 27;
+            this.rbtnInactive.TabStop = true;
+            this.rbtnInactive.Text = "Inactive";
+            this.rbtnInactive.UseVisualStyleBackColor = false;
+            // 
+            // rbtnActive
+            // 
+            this.rbtnActive.AutoSize = true;
+            this.rbtnActive.BackColor = System.Drawing.Color.White;
+            this.rbtnActive.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rbtnActive.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(120)))), ((int)(((byte)(165)))), ((int)(((byte)(254)))));
+            this.rbtnActive.Location = new System.Drawing.Point(47, 584);
+            this.rbtnActive.Name = "rbtnActive";
+            this.rbtnActive.Size = new System.Drawing.Size(95, 29);
+            this.rbtnActive.TabIndex = 26;
+            this.rbtnActive.TabStop = true;
+            this.rbtnActive.Text = "Active";
+            this.rbtnActive.UseVisualStyleBackColor = false;
+            // 
+            // pcboxCustomerPhoto
+            // 
+            this.pcboxCustomerPhoto.BackColor = System.Drawing.Color.Transparent;
+            this.pcboxCustomerPhoto.Location = new System.Drawing.Point(391, 39);
+            this.pcboxCustomerPhoto.Name = "pcboxCustomerPhoto";
+            this.pcboxCustomerPhoto.Size = new System.Drawing.Size(203, 173);
+            this.pcboxCustomerPhoto.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pcboxCustomerPhoto.TabIndex = 25;
+            this.pcboxCustomerPhoto.TabStop = false;
+            // 
+            // btnUpdate
+            // 
+            this.btnUpdate.BackColor = System.Drawing.Color.Transparent;
+            this.btnUpdate.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnUpdate.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnUpdate.ForeColor = System.Drawing.Color.White;
+            this.btnUpdate.Location = new System.Drawing.Point(784, 572);
+            this.btnUpdate.Name = "btnUpdate";
+            this.btnUpdate.Size = new System.Drawing.Size(172, 54);
+            this.btnUpdate.TabIndex = 11;
+            this.btnUpdate.Text = "Update";
+            this.btnUpdate.UseVisualStyleBackColor = false;
+            this.btnUpdate.Click += new System.EventHandler(this.btnUpdate_Click);
+            // 
+            // btnCancel
+            // 
+            this.btnCancel.BackColor = System.Drawing.Color.Transparent;
+            this.btnCancel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnCancel.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCancel.ForeColor = System.Drawing.Color.White;
+            this.btnCancel.Location = new System.Drawing.Point(594, 572);
+            this.btnCancel.Name = "btnCancel";
+            this.btnCancel.Size = new System.Drawing.Size(173, 54);
+            this.btnCancel.TabIndex = 10;
+            this.btnCancel.Text = "Cancel";
+            this.btnCancel.UseVisualStyleBackColor = false;
+            this.btnCancel.Click += new System.EventHandler(this.btnCancel_Click);
             // 
             // panel7
             // 
@@ -271,7 +379,6 @@
             this.flowLayoutPanel1.Controls.Add(this.panel14);
             this.flowLayoutPanel1.Controls.Add(this.panel15);
             this.flowLayoutPanel1.Controls.Add(this.panel16);
-            this.flowLayoutPanel1.Controls.Add(this.panel17);
             this.flowLayoutPanel1.Controls.Add(this.panel18);
             this.flowLayoutPanel1.Controls.Add(this.panel19);
             this.flowLayoutPanel1.Controls.Add(this.panel20);
@@ -429,35 +536,11 @@
             this.btnEmployees.Text = "CUSTOMERS";
             this.btnEmployees.UseVisualStyleBackColor = false;
             // 
-            // panel17
-            // 
-            this.panel17.BackColor = System.Drawing.Color.Transparent;
-            this.panel17.Controls.Add(this.btnReports);
-            this.panel17.Location = new System.Drawing.Point(3, 396);
-            this.panel17.Name = "panel17";
-            this.panel17.Size = new System.Drawing.Size(247, 43);
-            this.panel17.TabIndex = 2;
-            // 
-            // btnReports
-            // 
-            this.btnReports.BackColor = System.Drawing.Color.Transparent;
-            this.btnReports.Cursor = System.Windows.Forms.Cursors.Default;
-            this.btnReports.FlatAppearance.BorderSize = 0;
-            this.btnReports.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnReports.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnReports.ForeColor = System.Drawing.Color.White;
-            this.btnReports.Location = new System.Drawing.Point(-3, 3);
-            this.btnReports.Name = "btnReports";
-            this.btnReports.Size = new System.Drawing.Size(250, 40);
-            this.btnReports.TabIndex = 1;
-            this.btnReports.Text = "RESERVATIONS";
-            this.btnReports.UseVisualStyleBackColor = false;
-            // 
             // panel18
             // 
             this.panel18.BackColor = System.Drawing.Color.Transparent;
             this.panel18.Controls.Add(this.button1);
-            this.panel18.Location = new System.Drawing.Point(3, 445);
+            this.panel18.Location = new System.Drawing.Point(3, 396);
             this.panel18.Name = "panel18";
             this.panel18.Size = new System.Drawing.Size(247, 37);
             this.panel18.TabIndex = 0;
@@ -481,7 +564,7 @@
             // 
             this.panel19.BackColor = System.Drawing.Color.Transparent;
             this.panel19.Controls.Add(this.button5);
-            this.panel19.Location = new System.Drawing.Point(3, 488);
+            this.panel19.Location = new System.Drawing.Point(3, 439);
             this.panel19.Name = "panel19";
             this.panel19.Size = new System.Drawing.Size(247, 44);
             this.panel19.TabIndex = 0;
@@ -504,16 +587,16 @@
             // panel20
             // 
             this.panel20.BackColor = System.Drawing.Color.Transparent;
-            this.panel20.Location = new System.Drawing.Point(3, 538);
+            this.panel20.Location = new System.Drawing.Point(3, 489);
             this.panel20.Name = "panel20";
-            this.panel20.Size = new System.Drawing.Size(247, 144);
+            this.panel20.Size = new System.Drawing.Size(247, 190);
             this.panel20.TabIndex = 3;
             // 
             // panel21
             // 
             this.panel21.BackColor = System.Drawing.Color.Transparent;
             this.panel21.Controls.Add(this.btnLogout);
-            this.panel21.Location = new System.Drawing.Point(3, 688);
+            this.panel21.Location = new System.Drawing.Point(3, 685);
             this.panel21.Name = "panel21";
             this.panel21.Size = new System.Drawing.Size(247, 46);
             this.panel21.TabIndex = 0;
@@ -542,13 +625,14 @@
             this.Controls.Add(this.panel8);
             this.Controls.Add(this.panel7);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "ManageCustomer_UpdateForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.ManageCustomer_UpdateForm_Load);
             this.panel8.ResumeLayout(false);
             this.panel8.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pcboxCustomerPhoto)).EndInit();
             this.flowLayoutPanel1.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
@@ -557,7 +641,6 @@
             this.panel14.ResumeLayout(false);
             this.panel15.ResumeLayout(false);
             this.panel16.ResumeLayout(false);
-            this.panel17.ResumeLayout(false);
             this.panel18.ResumeLayout(false);
             this.panel19.ResumeLayout(false);
             this.panel21.ResumeLayout(false);
@@ -569,18 +652,11 @@
 
         private System.Windows.Forms.Panel panel7;
         private System.Windows.Forms.Panel panel8;
-        private System.Windows.Forms.TextBox textBox12;
-        private System.Windows.Forms.TextBox textBox11;
-        private System.Windows.Forms.TextBox textBox8;
-        private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.TextBox textBox5;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.PictureBox pictureBox2;
-        private System.Windows.Forms.RadioButton radioButton2;
-        private System.Windows.Forms.RadioButton radioButton1;
+        private System.Windows.Forms.Button btnUpdate;
+        private System.Windows.Forms.Button btnCancel;
+        private System.Windows.Forms.PictureBox pcboxCustomerPhoto;
+        private System.Windows.Forms.RadioButton rbtnInactive;
+        private System.Windows.Forms.RadioButton rbtnActive;
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.PictureBox pictureBox1;
@@ -594,8 +670,6 @@
         private System.Windows.Forms.Button btnCustomers;
         private System.Windows.Forms.Panel panel16;
         private System.Windows.Forms.Button btnEmployees;
-        private System.Windows.Forms.Panel panel17;
-        private System.Windows.Forms.Button btnReports;
         private System.Windows.Forms.Panel panel18;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Panel panel19;
@@ -603,5 +677,21 @@
         private System.Windows.Forms.Panel panel20;
         private System.Windows.Forms.Panel panel21;
         private System.Windows.Forms.Button btnLogout;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.TextBox txtFilename;
+        private System.Windows.Forms.TextBox txtFB_acnt;
+        private System.Windows.Forms.TextBox txtContactNum;
+        private System.Windows.Forms.TextBox txtLName;
+        private System.Windows.Forms.TextBox txtMName;
+        private System.Windows.Forms.TextBox txtMunicipality;
+        private System.Windows.Forms.TextBox txtBarangay;
+        private System.Windows.Forms.TextBox txtFName;
+        private System.Windows.Forms.Button btnBrowse;
+        private System.Windows.Forms.TextBox txtCustomerID;
     }
 }

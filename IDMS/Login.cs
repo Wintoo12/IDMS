@@ -50,7 +50,7 @@ namespace IDMS
             try
             {
                 Connection.Connection.DB();
-                Functions.Functions.query = "Select * from users where username = '" + txtUsername.Text + "' and password = '" + txtPassword.Text + "'";
+                Functions.Functions.query = "Select * from users where (username = '" + txtUsername.Text + "' and password = '" + txtPassword.Text + "') and status = 'Active'";
                 Functions.Functions.command = new SqlCommand(Functions.Functions.query, Connection.Connection.con);
                 Functions.Functions.reader = Functions.Functions.command.ExecuteReader();
 
