@@ -53,11 +53,17 @@
     <Compile Include="Admin\Error.Designer.cs">
       <DependentUpon>Error.cs</DependentUpon>
     </Compile>
-    <Compile Include="Admin\GenerateReport.cs">
+    <Compile Include="Admin\Generate Report\Generate Report_Attendance Analytics.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Admin\GenerateReport.Designer.cs">
-      <DependentUpon>GenerateReport.cs</DependentUpon>
+    <Compile Include="Admin\Generate Report\Generate Report_Attendance Analytics.Designer.cs">
+      <DependentUpon>Generate Report_Attendance Analytics.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Generate Report\GenerateReport_Sales Analytics.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin\Generate Report\GenerateReport_Sales Analytics.Designer.cs">
+      <DependentUpon>GenerateReport_Sales Analytics.cs</DependentUpon>
     </Compile>
     <Compile Include="Admin\Manage Customer\ManageCustomer_UpdateForm.cs">
       <SubType>Form</SubType>
@@ -89,13 +95,48 @@
     <Compile Include="Admin\Manage Employee\ManageEmployee_UpdateForm.Designer.cs">
       <DependentUpon>ManageEmployee_UpdateForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="Admin\Manage Installation\Item.cs" />
     <Compile Include="Admin\Manage Installation\ManageInstallation_AddForm.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Admin\Manage Installation\ManageInstallation_AddForm.Designer.cs">
       <DependentUpon>ManageInstallation_AddForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="Admin\Manage Installation\ManageInstallation_AddForm_2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin\Manage Installation\ManageInstallation_AddForm_2.Designer.cs">
+      <DependentUpon>ManageInstallation_AddForm_2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Manage Installation\ManageInstallation_AddForm_3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin\Manage Installation\ManageInstallation_AddForm_3.Designer.cs">
+      <DependentUpon>ManageInstallation_AddForm_3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Manage Installation\ManageInstallation_UpdateForm_2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin\Manage Installation\ManageInstallation_UpdateForm_2.Designer.cs">
+      <DependentUpon>ManageInstallation_UpdateForm_2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Manage Installation\ManageInstallation_UpdateForm_3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin\Manage Installation\ManageInstallation_UpdateForm_3.Designer.cs">
+      <DependentUpon>ManageInstallation_UpdateForm_3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Manage Installation\ManageInstallation_ViewDetails.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin\Manage Installation\ManageInstallation_ViewDetails.Designer.cs">
+      <DependentUpon>ManageInstallation_ViewDetails.cs</DependentUpon>
+    </Compile>
     <Compile Include="Connection\Connection.cs" />
+    <Compile Include="custom controls\toggle_button.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="DateTimeExtensions.cs" />
     <Compile Include="Functions\Functions.cs" />
     <Compile Include="Staff\Manage Customer\ManageCustomer_Staff.cs">
       <SubType>Form</SubType>
@@ -115,12 +156,6 @@
     <Compile Include="Admin\Manage Installation\ManageInstallation_UpdateForm.Designer.cs">
       <DependentUpon>ManageInstallation_UpdateForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="Admin\ManageReservations.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Admin\ManageReservations.Designer.cs">
-      <DependentUpon>ManageReservations.cs</DependentUpon>
-    </Compile>
     <Compile Include="Admin\Manage Employee\ManageEmployee.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -138,12 +173,6 @@
     </Compile>
     <Compile Include="Admin\Manage Installation\ManageInstallation.Designer.cs">
       <DependentUpon>ManageInstallation.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Admin\ManageSupplies.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Admin\ManageSupplies.Designer.cs">
-      <DependentUpon>ManageSupplies.cs</DependentUpon>
     </Compile>
     <Compile Include="Admin\AdminDashboard.cs">
       <SubType>Form</SubType>
@@ -175,6 +204,12 @@
     <Compile Include="Admin\ManageSupplies\ManageSupply_DashboardAdmin.Designer.cs">
       <DependentUpon>ManageSupply_DashboardAdmin.cs</DependentUpon>
     </Compile>
+    <Compile Include="Staff\Manage Installation\ManageInstallation_ViewDetailsStaff.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Staff\Manage Installation\ManageInstallation_ViewDetailsStaff.Designer.cs">
+      <DependentUpon>ManageInstallation_ViewDetailsStaff.cs</DependentUpon>
+    </Compile>
     <Compile Include="Staff\Manage Supplies\ManageSupply_DashboardStaff.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -195,17 +230,62 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Staff\Process Order\Installations\Checkout_Installations.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Staff\Process Order\Installations\Checkout_Installations.Designer.cs">
+      <DependentUpon>Checkout_Installations.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Staff\Process Order\Installations\Process Order_Installations.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Staff\Process Order\Installations\Process Order_Installations.Designer.cs">
+      <DependentUpon>Process Order_Installations.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Staff\Process Order\Supplies\Checkout_Supplies.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Staff\Process Order\Supplies\Checkout_Supplies.Designer.cs">
+      <DependentUpon>Checkout_Supplies.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Staff\Process Order\Supplies\ProcessOrder_Supplies.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Staff\Process Order\Supplies\ProcessOrder_Supplies.Designer.cs">
+      <DependentUpon>ProcessOrder_Supplies.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Staff\Process Order\Supplies\Receipt_Supplies.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Staff\Process Order\Supplies\Receipt_Supplies.Designer.cs">
+      <DependentUpon>Receipt_Supplies.cs</DependentUpon>
+    </Compile>
     <Compile Include="Staff\StaffDashboard.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Staff\StaffDashboard.Designer.cs">
       <DependentUpon>StaffDashboard.cs</DependentUpon>
     </Compile>
+    <Compile Include="UserControlBlank.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControlBlank.Designer.cs">
+      <DependentUpon>UserControlBlank.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControlDays.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControlDays.Designer.cs">
+      <DependentUpon>UserControlDays.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Admin\Error.resx">
       <DependentUpon>Error.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Admin\GenerateReport.resx">
-      <DependentUpon>GenerateReport.cs</DependentUpon>
+    <EmbeddedResource Include="Admin\Generate Report\Generate Report_Attendance Analytics.resx">
+      <DependentUpon>Generate Report_Attendance Analytics.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin\Generate Report\GenerateReport_Sales Analytics.resx">
+      <DependentUpon>GenerateReport_Sales Analytics.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Admin\Manage Customer\ManageCustomer_AddForm.resx">
       <DependentUpon>ManageCustomer_AddForm.cs</DependentUpon>
@@ -225,17 +305,29 @@
     <EmbeddedResource Include="Admin\Manage Installation\ManageInstallation_AddForm.resx">
       <DependentUpon>ManageInstallation_AddForm.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Admin\Manage Installation\ManageInstallation_AddForm_2.resx">
+      <DependentUpon>ManageInstallation_AddForm_2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin\Manage Installation\ManageInstallation_AddForm_3.resx">
+      <DependentUpon>ManageInstallation_AddForm_3.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Admin\Manage Installation\ManageInstallation_UpdateForm.resx">
       <DependentUpon>ManageInstallation_UpdateForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin\Manage Installation\ManageInstallation_UpdateForm_2.resx">
+      <DependentUpon>ManageInstallation_UpdateForm_2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin\Manage Installation\ManageInstallation_UpdateForm_3.resx">
+      <DependentUpon>ManageInstallation_UpdateForm_3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin\Manage Installation\ManageInstallation_ViewDetails.resx">
+      <DependentUpon>ManageInstallation_ViewDetails.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Staff\Manage Customer\ManageCustomer_Staff.resx">
       <DependentUpon>ManageCustomer_Staff.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Staff\Manage Installation\ManageInstallation_Staff.resx">
       <DependentUpon>ManageInstallation_Staff.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Admin\ManageReservations.resx">
-      <DependentUpon>ManageReservations.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Admin\Manage Employee\ManageEmployee.resx">
       <DependentUpon>ManageEmployee.cs</DependentUpon>
@@ -245,9 +337,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Admin\Manage Installation\ManageInstallation.resx">
       <DependentUpon>ManageInstallation.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Admin\ManageSupplies.resx">
-      <DependentUpon>ManageSupplies.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Admin\AdminDashboard.resx">
       <DependentUpon>AdminDashboard.cs</DependentUpon>
@@ -260,6 +349,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Admin\ManageSupplies\ManageSupply_DashboardAdmin.resx">
       <DependentUpon>ManageSupply_DashboardAdmin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Staff\Manage Installation\ManageInstallation_ViewDetailsStaff.resx">
+      <DependentUpon>ManageInstallation_ViewDetailsStaff.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Staff\Manage Supplies\ManageSupply_DashboardStaff.resx">
       <DependentUpon>ManageSupply_DashboardStaff.cs</DependentUpon>
@@ -283,8 +375,29 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="Staff\Process Order\Installations\Checkout_Installations.resx">
+      <DependentUpon>Checkout_Installations.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Staff\Process Order\Installations\Process Order_Installations.resx">
+      <DependentUpon>Process Order_Installations.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Staff\Process Order\Supplies\Checkout_Supplies.resx">
+      <DependentUpon>Checkout_Supplies.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Staff\Process Order\Supplies\ProcessOrder_Supplies.resx">
+      <DependentUpon>ProcessOrder_Supplies.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Staff\Process Order\Supplies\Receipt_Supplies.resx">
+      <DependentUpon>Receipt_Supplies.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Staff\StaffDashboard.resx">
       <DependentUpon>StaffDashboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControlBlank.resx">
+      <DependentUpon>UserControlBlank.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControlDays.resx">
+      <DependentUpon>UserControlDays.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -399,7 +512,66 @@
     <None Include="Resources\Untitled design %2861%29.png" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\pcbox.png" />
+    <None Include="Resources\PanelOrder1.png" />
+    <None Include="Resources\forDetails.png" />
+    <None Include="Resources\panel.png" />
+    <None Include="Resources\viwDetailsbg.png" />
+    <None Include="Resources\installationbtn.png" />
+    <None Include="Resources\textbox.png" />
+    <None Include="Resources\update package 1.png" />
+    <None Include="Resources\Untitled design %2889%29.png" />
+    <None Include="Resources\Untitled design.png" />
+    <None Include="Resources\Untitled design %2888%29.png" />
+    <None Include="Resources\Untitled design %2885%291.png" />
+    <None Include="Resources\Untitled design %2887%29.png" />
+    <None Include="Resources\Untitled design %2886%29.png" />
+    <None Include="Resources\Untitled design %2885%29.png" />
+    <None Include="Resources\Untitled design %2884%29.png" />
+    <None Include="Resources\Untitled design %2883%29.png" />
+    <None Include="Resources\Untitled design %2882%29.png" />
+    <None Include="Resources\Untitled design %2881%29.png" />
+    <None Include="Resources\PanelOrder.png" />
+    <None Include="Resources\Untitled design %2880%29.png" />
+    <None Include="Resources\Untitled design %2878%29.png" />
+    <None Include="Resources\Untitled design %2877%29.png" />
+    <None Include="Resources\Untitled design %2875%29.png" />
+    <None Include="Resources\Untitled design %2866%29.png" />
+    <None Include="Resources\Untitled design %2867%29.png" />
+    <None Include="Resources\Untitled design %2865%29.png" />
+    <None Include="Resources\Untitled design %2864%29.png" />
+    <None Include="Resources\Untitled design %2862%29.png" />
+    <None Include="Resources\Untitled design %2869%29.png" />
+    <None Include="Resources\Untitled design %2868%29.png" />
+    <None Include="Resources\PHP %2824%29.png" />
+    <None Include="Resources\PHP %2823%29.png" />
+    <None Include="Resources\PHP %2822%29.png" />
+    <None Include="Resources\PHP %2821%29.png" />
+    <None Include="Resources\PHP %2820%29.png" />
+    <None Include="Resources\PHP %2819%29.png" />
+    <None Include="Resources\PHP %2817%29.png" />
+    <None Include="Resources\PHP %2816%29.png" />
+    <None Include="Resources\PHP %2815%29.png" />
+    <None Include="Resources\Supplies add form.png" />
+    <None Include="Resources\3.png" />
+    <None Include="Resources\31.png" />
+    <None Include="Resources\647.png" />
+    <None Include="Resources\1.png" />
+    <None Include="Resources\2.png" />
+    <None Include="Resources\32.png" />
+    <None Include="Resources\4.png" />
+    <None Include="Resources\11.png" />
+    <None Include="Resources\21.png" />
+    <None Include="Resources\22.png" />
+    <None Include="Resources\33.png" />
+    <None Include="Resources\add package 1.png" />
+    <None Include="Resources\add package 2.png" />
+    <None Include="Resources\add package 3.png" />
+    <None Include="Resources\add package 31.png" />
+    <None Include="Resources\add package 21.png" />
+    <None Include="Resources\background.png" />
     <Content Include="Resources\button.png" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

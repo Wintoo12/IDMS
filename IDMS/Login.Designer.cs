@@ -41,6 +41,7 @@
             // 
             // txtPassword
             // 
+            this.txtPassword.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.txtPassword.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtPassword.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtPassword.Location = new System.Drawing.Point(844, 439);
@@ -54,6 +55,7 @@
             // 
             // txtUsername
             // 
+            this.txtUsername.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.txtUsername.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtUsername.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtUsername.Location = new System.Drawing.Point(844, 365);
@@ -66,6 +68,7 @@
             // 
             // btnLogin
             // 
+            this.btnLogin.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.btnLogin.BackColor = System.Drawing.Color.Transparent;
             this.btnLogin.FlatAppearance.BorderSize = 0;
             this.btnLogin.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(119)))), ((int)(((byte)(163)))), ((int)(((byte)(254)))));
@@ -83,6 +86,7 @@
             // 
             // btnMinimize
             // 
+            this.btnMinimize.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.btnMinimize.BackColor = System.Drawing.Color.Transparent;
             this.btnMinimize.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnMinimize.BackgroundImage")));
             this.btnMinimize.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
@@ -97,6 +101,7 @@
             // 
             // btnExit
             // 
+            this.btnExit.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.btnExit.BackColor = System.Drawing.Color.Transparent;
             this.btnExit.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnExit.BackgroundImage")));
             this.btnExit.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
@@ -111,6 +116,7 @@
             // 
             // btnViewPass
             // 
+            this.btnViewPass.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.btnViewPass.BackColor = System.Drawing.Color.Transparent;
             this.btnViewPass.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnViewPass.BackgroundImage")));
             this.btnViewPass.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
@@ -125,6 +131,7 @@
             // 
             // btnHidePass
             // 
+            this.btnHidePass.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.btnHidePass.BackColor = System.Drawing.Color.Transparent;
             this.btnHidePass.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnHidePass.BackgroundImage")));
             this.btnHidePass.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
@@ -139,6 +146,7 @@
             // 
             // pnlError
             // 
+            this.pnlError.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.pnlError.Location = new System.Drawing.Point(3, 731);
             this.pnlError.Name = "pnlError";
             this.pnlError.Size = new System.Drawing.Size(1277, 738);
@@ -163,6 +171,7 @@
             this.Controls.Add(this.btnHidePass);
             this.DoubleBuffered = true;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Login";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Login";

@@ -29,361 +29,342 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(StaffDashboard));
-            this.panel10 = new System.Windows.Forms.Panel();
-            this.vScrollBar1 = new System.Windows.Forms.VScrollBar();
+            this.panel3 = new System.Windows.Forms.Panel();
+            this.btnProcessOrder = new System.Windows.Forms.Button();
+            this.label8 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.panel13 = new System.Windows.Forms.Panel();
-            this.panel7 = new System.Windows.Forms.Panel();
-            this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
-            this.panel6 = new System.Windows.Forms.Panel();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.label3 = new System.Windows.Forms.Label();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.label6 = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
+            this.btnViewCustomer = new System.Windows.Forms.Button();
+            this.panel1 = new System.Windows.Forms.Panel();
             this.label4 = new System.Windows.Forms.Label();
-            this.panel15 = new System.Windows.Forms.Panel();
-            this.btnHome = new System.Windows.Forms.Button();
-            this.panel16 = new System.Windows.Forms.Panel();
+            this.label5 = new System.Windows.Forms.Label();
+            this.btnManageInstallation = new System.Windows.Forms.Button();
+            this.panel4 = new System.Windows.Forms.Panel();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
             this.btnSupplies = new System.Windows.Forms.Button();
-            this.panel17 = new System.Windows.Forms.Panel();
-            this.btnCustomers = new System.Windows.Forms.Button();
-            this.panel18 = new System.Windows.Forms.Panel();
-            this.btnEmployees = new System.Windows.Forms.Button();
-            this.panel19 = new System.Windows.Forms.Panel();
-            this.btnReports = new System.Windows.Forms.Button();
-            this.panel21 = new System.Windows.Forms.Panel();
-            this.button11 = new System.Windows.Forms.Button();
-            this.panel22 = new System.Windows.Forms.Panel();
-            this.panel23 = new System.Windows.Forms.Panel();
+            this.panel7 = new System.Windows.Forms.Panel();
+            this.lblWelcome = new System.Windows.Forms.Label();
+            this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
+            this.btnSuppliesOrder = new System.Windows.Forms.Button();
+            this.btnInstallationOrder = new System.Windows.Forms.Button();
+            this.pnlSupplies = new System.Windows.Forms.FlowLayoutPanel();
+            this.btnViewSupplies = new System.Windows.Forms.Button();
+            this.btnViewStatus = new System.Windows.Forms.Button();
             this.btnLogout = new System.Windows.Forms.Button();
-            this.panel10.SuspendLayout();
+            this.panel3.SuspendLayout();
+            this.panel2.SuspendLayout();
+            this.panel1.SuspendLayout();
+            this.panel4.SuspendLayout();
             this.flowLayoutPanel1.SuspendLayout();
-            this.panel6.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            this.panel15.SuspendLayout();
-            this.panel16.SuspendLayout();
-            this.panel17.SuspendLayout();
-            this.panel18.SuspendLayout();
-            this.panel19.SuspendLayout();
-            this.panel21.SuspendLayout();
-            this.panel23.SuspendLayout();
+            this.pnlSupplies.SuspendLayout();
             this.SuspendLayout();
             // 
-            // panel10
+            // panel3
             // 
-            this.panel10.BackgroundImage = global::IDMS.Properties.Resources.Untitled_design__44_;
-            this.panel10.Controls.Add(this.vScrollBar1);
-            this.panel10.Controls.Add(this.label9);
-            this.panel10.Controls.Add(this.comboBox2);
-            this.panel10.Controls.Add(this.comboBox1);
-            this.panel10.Controls.Add(this.panel13);
-            this.panel10.Location = new System.Drawing.Point(272, 63);
-            this.panel10.Name = "panel10";
-            this.panel10.Size = new System.Drawing.Size(370, 647);
-            this.panel10.TabIndex = 5;
+            this.panel3.BackgroundImage = global::IDMS.Properties.Resources._4;
+            this.panel3.Controls.Add(this.btnProcessOrder);
+            this.panel3.Controls.Add(this.label8);
+            this.panel3.Controls.Add(this.label9);
+            this.panel3.Location = new System.Drawing.Point(970, 145);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(285, 421);
+            this.panel3.TabIndex = 8;
             // 
-            // vScrollBar1
+            // btnProcessOrder
             // 
-            this.vScrollBar1.Location = new System.Drawing.Point(334, 49);
-            this.vScrollBar1.Name = "vScrollBar1";
-            this.vScrollBar1.Size = new System.Drawing.Size(17, 575);
-            this.vScrollBar1.TabIndex = 0;
+            this.btnProcessOrder.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(122)))), ((int)(((byte)(167)))), ((int)(((byte)(254)))));
+            this.btnProcessOrder.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnProcessOrder.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnProcessOrder.Location = new System.Drawing.Point(31, 357);
+            this.btnProcessOrder.Name = "btnProcessOrder";
+            this.btnProcessOrder.Size = new System.Drawing.Size(223, 32);
+            this.btnProcessOrder.TabIndex = 14;
+            this.btnProcessOrder.Text = "GO TO";
+            this.btnProcessOrder.UseVisualStyleBackColor = false;
+            this.btnProcessOrder.Click += new System.EventHandler(this.btnProcessOrder_Click);
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(134)))), ((int)(((byte)(178)))), ((int)(((byte)(254)))));
+            this.label8.Font = new System.Drawing.Font("Century Gothic", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.ForeColor = System.Drawing.Color.White;
+            this.label8.Location = new System.Drawing.Point(76, 267);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(137, 44);
+            this.label8.TabIndex = 15;
+            this.label8.Text = "ORDER";
             // 
             // label9
             // 
             this.label9.AutoSize = true;
-            this.label9.BackColor = System.Drawing.Color.Transparent;
-            this.label9.Cursor = System.Windows.Forms.Cursors.Default;
-            this.label9.Font = new System.Drawing.Font("Century Gothic", 14F, System.Drawing.FontStyle.Bold);
+            this.label9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(142)))), ((int)(((byte)(184)))), ((int)(((byte)(254)))));
+            this.label9.Font = new System.Drawing.Font("Century Gothic", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label9.ForeColor = System.Drawing.Color.White;
-            this.label9.Location = new System.Drawing.Point(12, 14);
+            this.label9.Location = new System.Drawing.Point(58, 223);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(72, 23);
-            this.label9.TabIndex = 5;
-            this.label9.Text = "NOTIFS";
+            this.label9.Size = new System.Drawing.Size(178, 44);
+            this.label9.TabIndex = 14;
+            this.label9.Text = "PROCESS";
             // 
-            // comboBox2
+            // panel2
             // 
-            this.comboBox2.BackColor = System.Drawing.Color.White;
-            this.comboBox2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.comboBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBox2.ForeColor = System.Drawing.Color.White;
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Location = new System.Drawing.Point(157, 13);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(98, 28);
-            this.comboBox2.TabIndex = 2;
+            this.panel2.BackgroundImage = global::IDMS.Properties.Resources._32;
+            this.panel2.Controls.Add(this.label6);
+            this.panel2.Controls.Add(this.label7);
+            this.panel2.Controls.Add(this.btnViewCustomer);
+            this.panel2.Location = new System.Drawing.Point(656, 145);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(285, 421);
+            this.panel2.TabIndex = 7;
             // 
-            // comboBox1
+            // label6
             // 
-            this.comboBox1.BackColor = System.Drawing.Color.White;
-            this.comboBox1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.comboBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBox1.ForeColor = System.Drawing.Color.White;
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(261, 13);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(88, 28);
-            this.comboBox1.TabIndex = 1;
+            this.label6.AutoSize = true;
+            this.label6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(134)))), ((int)(((byte)(178)))), ((int)(((byte)(254)))));
+            this.label6.Font = new System.Drawing.Font("Century Gothic", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.ForeColor = System.Drawing.Color.White;
+            this.label6.Location = new System.Drawing.Point(36, 267);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(211, 44);
+            this.label6.TabIndex = 13;
+            this.label6.Text = "CUSTOMER";
             // 
-            // panel13
+            // label7
             // 
-            this.panel13.Location = new System.Drawing.Point(16, 49);
-            this.panel13.Name = "panel13";
-            this.panel13.Size = new System.Drawing.Size(315, 575);
-            this.panel13.TabIndex = 0;
+            this.label7.AutoSize = true;
+            this.label7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(142)))), ((int)(((byte)(184)))), ((int)(((byte)(254)))));
+            this.label7.Font = new System.Drawing.Font("Century Gothic", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.ForeColor = System.Drawing.Color.White;
+            this.label7.Location = new System.Drawing.Point(90, 223);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(107, 44);
+            this.label7.TabIndex = 12;
+            this.label7.Text = "VIEW";
             // 
-            // panel7
+            // btnViewCustomer
             // 
-            this.panel7.BackgroundImage = global::IDMS.Properties.Resources.Untitled_design__29_;
-            this.panel7.Location = new System.Drawing.Point(247, 1);
-            this.panel7.Name = "panel7";
-            this.panel7.Size = new System.Drawing.Size(1035, 43);
-            this.panel7.TabIndex = 2;
+            this.btnViewCustomer.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(122)))), ((int)(((byte)(167)))), ((int)(((byte)(254)))));
+            this.btnViewCustomer.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnViewCustomer.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnViewCustomer.Location = new System.Drawing.Point(31, 357);
+            this.btnViewCustomer.Name = "btnViewCustomer";
+            this.btnViewCustomer.Size = new System.Drawing.Size(223, 32);
+            this.btnViewCustomer.TabIndex = 1;
+            this.btnViewCustomer.Text = "GO TO";
+            this.btnViewCustomer.UseVisualStyleBackColor = false;
+            this.btnViewCustomer.Click += new System.EventHandler(this.btnViewCustomer_Click);
             // 
-            // flowLayoutPanel1
+            // panel1
             // 
-            this.flowLayoutPanel1.BackgroundImage = global::IDMS.Properties.Resources.Untitled_design__61_;
-            this.flowLayoutPanel1.Controls.Add(this.panel6);
-            this.flowLayoutPanel1.Controls.Add(this.panel15);
-            this.flowLayoutPanel1.Controls.Add(this.panel16);
-            this.flowLayoutPanel1.Controls.Add(this.panel17);
-            this.flowLayoutPanel1.Controls.Add(this.panel18);
-            this.flowLayoutPanel1.Controls.Add(this.panel19);
-            this.flowLayoutPanel1.Controls.Add(this.panel21);
-            this.flowLayoutPanel1.Controls.Add(this.panel22);
-            this.flowLayoutPanel1.Controls.Add(this.panel23);
-            this.flowLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Left;
-            this.flowLayoutPanel1.FlowDirection = System.Windows.Forms.FlowDirection.TopDown;
-            this.flowLayoutPanel1.ForeColor = System.Drawing.Color.Cornsilk;
-            this.flowLayoutPanel1.Location = new System.Drawing.Point(0, 0);
-            this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(250, 739);
-            this.flowLayoutPanel1.TabIndex = 18;
-            this.flowLayoutPanel1.WrapContents = false;
-            // 
-            // panel6
-            // 
-            this.panel6.BackColor = System.Drawing.Color.Transparent;
-            this.panel6.Controls.Add(this.pictureBox1);
-            this.panel6.Controls.Add(this.label3);
-            this.panel6.Controls.Add(this.label4);
-            this.panel6.Location = new System.Drawing.Point(3, 3);
-            this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(247, 215);
-            this.panel6.TabIndex = 0;
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(62, 8);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(117, 111);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.BackColor = System.Drawing.Color.Transparent;
-            this.label3.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.Color.White;
-            this.label3.Location = new System.Drawing.Point(28, 163);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(193, 42);
-            this.label3.TabIndex = 2;
-            this.label3.Text = "INVENTORY AND DATA\r\n       MANAGEMENT";
+            this.panel1.BackgroundImage = global::IDMS.Properties.Resources._2;
+            this.panel1.Controls.Add(this.label4);
+            this.panel1.Controls.Add(this.label5);
+            this.panel1.Controls.Add(this.btnManageInstallation);
+            this.panel1.Location = new System.Drawing.Point(339, 145);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(285, 421);
+            this.panel1.TabIndex = 6;
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.BackColor = System.Drawing.Color.Transparent;
-            this.label4.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(134)))), ((int)(((byte)(178)))), ((int)(((byte)(254)))));
+            this.label4.Font = new System.Drawing.Font("Century Gothic", 26.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.White;
-            this.label4.Location = new System.Drawing.Point(70, 140);
+            this.label4.Location = new System.Drawing.Point(20, 270);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(104, 23);
-            this.label4.TabIndex = 1;
-            this.label4.Text = "AQUAPHIL\r\n";
+            this.label4.Size = new System.Drawing.Size(249, 41);
+            this.label4.TabIndex = 13;
+            this.label4.Text = "INSTALLATION";
             // 
-            // panel15
+            // label5
             // 
-            this.panel15.BackColor = System.Drawing.Color.Transparent;
-            this.panel15.Controls.Add(this.btnHome);
-            this.panel15.Location = new System.Drawing.Point(3, 224);
-            this.panel15.Name = "panel15";
-            this.panel15.Size = new System.Drawing.Size(247, 37);
-            this.panel15.TabIndex = 1;
+            this.label5.AutoSize = true;
+            this.label5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(142)))), ((int)(((byte)(184)))), ((int)(((byte)(254)))));
+            this.label5.Font = new System.Drawing.Font("Century Gothic", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.ForeColor = System.Drawing.Color.White;
+            this.label5.Location = new System.Drawing.Point(89, 226);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(107, 44);
+            this.label5.TabIndex = 12;
+            this.label5.Text = "VIEW";
             // 
-            // btnHome
+            // btnManageInstallation
             // 
-            this.btnHome.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(145)))), ((int)(((byte)(187)))), ((int)(((byte)(254)))));
-            this.btnHome.Cursor = System.Windows.Forms.Cursors.Default;
-            this.btnHome.FlatAppearance.BorderSize = 0;
-            this.btnHome.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnHome.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnHome.ForeColor = System.Drawing.Color.White;
-            this.btnHome.Location = new System.Drawing.Point(0, 3);
-            this.btnHome.Name = "btnHome";
-            this.btnHome.Size = new System.Drawing.Size(247, 30);
-            this.btnHome.TabIndex = 1;
-            this.btnHome.Text = "HOME";
-            this.btnHome.UseVisualStyleBackColor = false;
+            this.btnManageInstallation.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(122)))), ((int)(((byte)(167)))), ((int)(((byte)(254)))));
+            this.btnManageInstallation.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnManageInstallation.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnManageInstallation.Location = new System.Drawing.Point(31, 357);
+            this.btnManageInstallation.Name = "btnManageInstallation";
+            this.btnManageInstallation.Size = new System.Drawing.Size(223, 32);
+            this.btnManageInstallation.TabIndex = 1;
+            this.btnManageInstallation.Text = "GO TO";
+            this.btnManageInstallation.UseVisualStyleBackColor = false;
+            this.btnManageInstallation.Click += new System.EventHandler(this.btnManageInstallation_Click);
             // 
-            // panel16
+            // panel4
             // 
-            this.panel16.BackColor = System.Drawing.Color.Transparent;
-            this.panel16.Controls.Add(this.btnSupplies);
-            this.panel16.Location = new System.Drawing.Point(3, 267);
-            this.panel16.Name = "panel16";
-            this.panel16.Size = new System.Drawing.Size(247, 36);
-            this.panel16.TabIndex = 0;
+            this.panel4.BackgroundImage = global::IDMS.Properties.Resources._1;
+            this.panel4.Controls.Add(this.label3);
+            this.panel4.Controls.Add(this.label2);
+            this.panel4.Controls.Add(this.btnSupplies);
+            this.panel4.Location = new System.Drawing.Point(23, 145);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(285, 421);
+            this.panel4.TabIndex = 5;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(134)))), ((int)(((byte)(178)))), ((int)(((byte)(254)))));
+            this.label3.Font = new System.Drawing.Font("Century Gothic", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.Color.White;
+            this.label3.Location = new System.Drawing.Point(59, 269);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(168, 44);
+            this.label3.TabIndex = 11;
+            this.label3.Text = "SUPPLIES";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(142)))), ((int)(((byte)(184)))), ((int)(((byte)(254)))));
+            this.label2.Font = new System.Drawing.Font("Century Gothic", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.White;
+            this.label2.Location = new System.Drawing.Point(89, 225);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(107, 44);
+            this.label2.TabIndex = 10;
+            this.label2.Text = "VIEW";
             // 
             // btnSupplies
             // 
-            this.btnSupplies.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(145)))), ((int)(((byte)(187)))), ((int)(((byte)(254)))));
-            this.btnSupplies.Cursor = System.Windows.Forms.Cursors.Default;
-            this.btnSupplies.FlatAppearance.BorderSize = 0;
+            this.btnSupplies.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(122)))), ((int)(((byte)(167)))), ((int)(((byte)(254)))));
             this.btnSupplies.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnSupplies.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSupplies.ForeColor = System.Drawing.Color.White;
-            this.btnSupplies.Location = new System.Drawing.Point(0, 3);
+            this.btnSupplies.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSupplies.Location = new System.Drawing.Point(31, 357);
             this.btnSupplies.Name = "btnSupplies";
-            this.btnSupplies.Size = new System.Drawing.Size(247, 31);
-            this.btnSupplies.TabIndex = 1;
-            this.btnSupplies.Text = "SUPPLIES";
+            this.btnSupplies.Size = new System.Drawing.Size(223, 32);
+            this.btnSupplies.TabIndex = 0;
+            this.btnSupplies.Text = "GO TO";
             this.btnSupplies.UseVisualStyleBackColor = false;
+            this.btnSupplies.Click += new System.EventHandler(this.btnSupplies_Click);
             // 
-            // panel17
+            // panel7
             // 
-            this.panel17.BackColor = System.Drawing.Color.Transparent;
-            this.panel17.Controls.Add(this.btnCustomers);
-            this.panel17.Location = new System.Drawing.Point(3, 309);
-            this.panel17.Name = "panel17";
-            this.panel17.Size = new System.Drawing.Size(247, 37);
-            this.panel17.TabIndex = 0;
+            this.panel7.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel7.BackgroundImage")));
+            this.panel7.Location = new System.Drawing.Point(-2, 1);
+            this.panel7.Name = "panel7";
+            this.panel7.Size = new System.Drawing.Size(1285, 43);
+            this.panel7.TabIndex = 2;
             // 
-            // btnCustomers
+            // lblWelcome
             // 
-            this.btnCustomers.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(145)))), ((int)(((byte)(187)))), ((int)(((byte)(254)))));
-            this.btnCustomers.Cursor = System.Windows.Forms.Cursors.Default;
-            this.btnCustomers.FlatAppearance.BorderSize = 0;
-            this.btnCustomers.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnCustomers.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCustomers.ForeColor = System.Drawing.Color.White;
-            this.btnCustomers.Location = new System.Drawing.Point(0, 3);
-            this.btnCustomers.Name = "btnCustomers";
-            this.btnCustomers.Size = new System.Drawing.Size(247, 32);
-            this.btnCustomers.TabIndex = 1;
-            this.btnCustomers.Text = "INSTALLATIONS";
-            this.btnCustomers.UseVisualStyleBackColor = false;
+            this.lblWelcome.AutoSize = true;
+            this.lblWelcome.Font = new System.Drawing.Font("Century Gothic", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblWelcome.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(137)))), ((int)(((byte)(180)))), ((int)(((byte)(254)))));
+            this.lblWelcome.Location = new System.Drawing.Point(403, 70);
+            this.lblWelcome.Name = "lblWelcome";
+            this.lblWelcome.Size = new System.Drawing.Size(219, 44);
+            this.lblWelcome.TabIndex = 9;
+            this.lblWelcome.Text = "WELCOME, ";
             // 
-            // panel18
+            // flowLayoutPanel1
             // 
-            this.panel18.BackColor = System.Drawing.Color.Transparent;
-            this.panel18.Controls.Add(this.btnEmployees);
-            this.panel18.Location = new System.Drawing.Point(3, 352);
-            this.panel18.Name = "panel18";
-            this.panel18.Size = new System.Drawing.Size(247, 38);
-            this.panel18.TabIndex = 0;
+            this.flowLayoutPanel1.BackgroundImage = global::IDMS.Properties.Resources.Untitled_design__33_;
+            this.flowLayoutPanel1.Controls.Add(this.btnSuppliesOrder);
+            this.flowLayoutPanel1.Controls.Add(this.btnInstallationOrder);
+            this.flowLayoutPanel1.Location = new System.Drawing.Point(970, 563);
+            this.flowLayoutPanel1.Name = "flowLayoutPanel1";
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(285, 110);
+            this.flowLayoutPanel1.TabIndex = 10;
+            this.flowLayoutPanel1.Visible = false;
             // 
-            // btnEmployees
+            // btnSuppliesOrder
             // 
-            this.btnEmployees.BackColor = System.Drawing.Color.Transparent;
-            this.btnEmployees.Cursor = System.Windows.Forms.Cursors.Default;
-            this.btnEmployees.FlatAppearance.BorderSize = 0;
-            this.btnEmployees.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnEmployees.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnEmployees.ForeColor = System.Drawing.Color.White;
-            this.btnEmployees.Location = new System.Drawing.Point(0, 3);
-            this.btnEmployees.Name = "btnEmployees";
-            this.btnEmployees.Size = new System.Drawing.Size(247, 32);
-            this.btnEmployees.TabIndex = 1;
-            this.btnEmployees.Text = "CUSTOMERS";
-            this.btnEmployees.UseVisualStyleBackColor = false;
+            this.btnSuppliesOrder.BackgroundImage = global::IDMS.Properties.Resources.Untitled_design__33_;
+            this.btnSuppliesOrder.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnSuppliesOrder.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnSuppliesOrder.Font = new System.Drawing.Font("Century Gothic", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSuppliesOrder.Location = new System.Drawing.Point(3, 3);
+            this.btnSuppliesOrder.Name = "btnSuppliesOrder";
+            this.btnSuppliesOrder.Size = new System.Drawing.Size(279, 48);
+            this.btnSuppliesOrder.TabIndex = 0;
+            this.btnSuppliesOrder.Text = "Supplies Order";
+            this.btnSuppliesOrder.UseVisualStyleBackColor = true;
+            this.btnSuppliesOrder.Click += new System.EventHandler(this.btnSuppliesOrder_Click);
+            this.btnSuppliesOrder.Leave += new System.EventHandler(this.btnSuppliesOrder_Leave);
             // 
-            // panel19
+            // btnInstallationOrder
             // 
-            this.panel19.BackColor = System.Drawing.Color.Transparent;
-            this.panel19.Controls.Add(this.btnReports);
-            this.panel19.Location = new System.Drawing.Point(3, 396);
-            this.panel19.Name = "panel19";
-            this.panel19.Size = new System.Drawing.Size(247, 43);
-            this.panel19.TabIndex = 2;
+            this.btnInstallationOrder.BackgroundImage = global::IDMS.Properties.Resources.Untitled_design__33_;
+            this.btnInstallationOrder.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnInstallationOrder.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnInstallationOrder.Font = new System.Drawing.Font("Century Gothic", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnInstallationOrder.Location = new System.Drawing.Point(3, 57);
+            this.btnInstallationOrder.Name = "btnInstallationOrder";
+            this.btnInstallationOrder.Size = new System.Drawing.Size(279, 48);
+            this.btnInstallationOrder.TabIndex = 0;
+            this.btnInstallationOrder.Text = "Installation Order";
+            this.btnInstallationOrder.UseVisualStyleBackColor = true;
+            this.btnInstallationOrder.Click += new System.EventHandler(this.btnInstallationOrder_Click);
             // 
-            // btnReports
+            // pnlSupplies
             // 
-            this.btnReports.BackColor = System.Drawing.Color.Transparent;
-            this.btnReports.Cursor = System.Windows.Forms.Cursors.Default;
-            this.btnReports.FlatAppearance.BorderSize = 0;
-            this.btnReports.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnReports.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnReports.ForeColor = System.Drawing.Color.White;
-            this.btnReports.Location = new System.Drawing.Point(-3, 3);
-            this.btnReports.Name = "btnReports";
-            this.btnReports.Size = new System.Drawing.Size(250, 40);
-            this.btnReports.TabIndex = 1;
-            this.btnReports.Text = "RESERVATIONS";
-            this.btnReports.UseVisualStyleBackColor = false;
+            this.pnlSupplies.BackgroundImage = global::IDMS.Properties.Resources.Untitled_design__33_;
+            this.pnlSupplies.Controls.Add(this.btnViewSupplies);
+            this.pnlSupplies.Controls.Add(this.btnViewStatus);
+            this.pnlSupplies.Location = new System.Drawing.Point(23, 566);
+            this.pnlSupplies.Name = "pnlSupplies";
+            this.pnlSupplies.Size = new System.Drawing.Size(285, 110);
+            this.pnlSupplies.TabIndex = 10;
+            this.pnlSupplies.Visible = false;
             // 
-            // panel21
+            // btnViewSupplies
             // 
-            this.panel21.BackColor = System.Drawing.Color.Transparent;
-            this.panel21.Controls.Add(this.button11);
-            this.panel21.Location = new System.Drawing.Point(3, 445);
-            this.panel21.Name = "panel21";
-            this.panel21.Size = new System.Drawing.Size(247, 44);
-            this.panel21.TabIndex = 0;
+            this.btnViewSupplies.BackgroundImage = global::IDMS.Properties.Resources.Untitled_design__33_;
+            this.btnViewSupplies.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnViewSupplies.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnViewSupplies.Font = new System.Drawing.Font("Century Gothic", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnViewSupplies.Location = new System.Drawing.Point(3, 3);
+            this.btnViewSupplies.Name = "btnViewSupplies";
+            this.btnViewSupplies.Size = new System.Drawing.Size(279, 48);
+            this.btnViewSupplies.TabIndex = 1;
+            this.btnViewSupplies.Text = "View Supplies";
+            this.btnViewSupplies.UseVisualStyleBackColor = true;
+            this.btnViewSupplies.Click += new System.EventHandler(this.btnViewSupplies_Click);
             // 
-            // button11
+            // btnViewStatus
             // 
-            this.button11.BackColor = System.Drawing.Color.Transparent;
-            this.button11.Cursor = System.Windows.Forms.Cursors.Default;
-            this.button11.FlatAppearance.BorderSize = 0;
-            this.button11.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button11.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button11.ForeColor = System.Drawing.Color.White;
-            this.button11.Location = new System.Drawing.Point(0, 3);
-            this.button11.Name = "button11";
-            this.button11.Size = new System.Drawing.Size(247, 38);
-            this.button11.TabIndex = 2;
-            this.button11.Text = "ORDERS";
-            this.button11.UseVisualStyleBackColor = false;
-            // 
-            // panel22
-            // 
-            this.panel22.BackColor = System.Drawing.Color.Transparent;
-            this.panel22.Location = new System.Drawing.Point(3, 495);
-            this.panel22.Name = "panel22";
-            this.panel22.Size = new System.Drawing.Size(247, 155);
-            this.panel22.TabIndex = 3;
-            // 
-            // panel23
-            // 
-            this.panel23.BackColor = System.Drawing.Color.Transparent;
-            this.panel23.Controls.Add(this.btnLogout);
-            this.panel23.Location = new System.Drawing.Point(3, 656);
-            this.panel23.Name = "panel23";
-            this.panel23.Size = new System.Drawing.Size(247, 46);
-            this.panel23.TabIndex = 0;
+            this.btnViewStatus.BackgroundImage = global::IDMS.Properties.Resources.Untitled_design__33_;
+            this.btnViewStatus.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnViewStatus.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnViewStatus.Font = new System.Drawing.Font("Century Gothic", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnViewStatus.Location = new System.Drawing.Point(3, 57);
+            this.btnViewStatus.Name = "btnViewStatus";
+            this.btnViewStatus.Size = new System.Drawing.Size(279, 48);
+            this.btnViewStatus.TabIndex = 1;
+            this.btnViewStatus.Text = "View Status";
+            this.btnViewStatus.UseVisualStyleBackColor = true;
+            this.btnViewStatus.Click += new System.EventHandler(this.btnViewStatus_Click);
             // 
             // btnLogout
             // 
-            this.btnLogout.Cursor = System.Windows.Forms.Cursors.Default;
-            this.btnLogout.FlatAppearance.BorderSize = 0;
+            this.btnLogout.BackgroundImage = global::IDMS.Properties.Resources.Untitled_design__33_;
+            this.btnLogout.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnLogout.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnLogout.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnLogout.ForeColor = System.Drawing.Color.White;
-            this.btnLogout.Location = new System.Drawing.Point(0, 3);
+            this.btnLogout.Font = new System.Drawing.Font("Century Gothic", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnLogout.Location = new System.Drawing.Point(557, 679);
             this.btnLogout.Name = "btnLogout";
-            this.btnLogout.Size = new System.Drawing.Size(247, 40);
-            this.btnLogout.TabIndex = 5;
-            this.btnLogout.Text = "LOGOUT";
+            this.btnLogout.Size = new System.Drawing.Size(195, 48);
+            this.btnLogout.TabIndex = 11;
+            this.btnLogout.Text = "Logout";
             this.btnLogout.UseVisualStyleBackColor = true;
+            this.btnLogout.Click += new System.EventHandler(this.btnLogout_Click);
             // 
             // StaffDashboard
             // 
@@ -391,58 +372,61 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1280, 739);
+            this.Controls.Add(this.btnLogout);
+            this.Controls.Add(this.pnlSupplies);
             this.Controls.Add(this.flowLayoutPanel1);
-            this.Controls.Add(this.panel10);
+            this.Controls.Add(this.lblWelcome);
+            this.Controls.Add(this.panel3);
+            this.Controls.Add(this.panel2);
+            this.Controls.Add(this.panel1);
+            this.Controls.Add(this.panel4);
             this.Controls.Add(this.panel7);
             this.ForeColor = System.Drawing.Color.White;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "StaffDashboard";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "StaffDashboard";
-            this.panel10.ResumeLayout(false);
-            this.panel10.PerformLayout();
+            this.Load += new System.EventHandler(this.StaffDashboard_Load);
+            this.panel3.ResumeLayout(false);
+            this.panel3.PerformLayout();
+            this.panel2.ResumeLayout(false);
+            this.panel2.PerformLayout();
+            this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
+            this.panel4.ResumeLayout(false);
+            this.panel4.PerformLayout();
             this.flowLayoutPanel1.ResumeLayout(false);
-            this.panel6.ResumeLayout(false);
-            this.panel6.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            this.panel15.ResumeLayout(false);
-            this.panel16.ResumeLayout(false);
-            this.panel17.ResumeLayout(false);
-            this.panel18.ResumeLayout(false);
-            this.panel19.ResumeLayout(false);
-            this.panel21.ResumeLayout(false);
-            this.panel23.ResumeLayout(false);
+            this.pnlSupplies.ResumeLayout(false);
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
         #endregion
         private System.Windows.Forms.Panel panel7;
-        private System.Windows.Forms.Panel panel10;
-        private System.Windows.Forms.VScrollBar vScrollBar1;
-        private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.ComboBox comboBox2;
-        private System.Windows.Forms.ComboBox comboBox1;
-        private System.Windows.Forms.Panel panel13;
-        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
-        private System.Windows.Forms.Panel panel6;
-        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Panel panel4;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.Panel panel3;
+        private System.Windows.Forms.Label lblWelcome;
+        private System.Windows.Forms.Button btnViewCustomer;
+        private System.Windows.Forms.Button btnManageInstallation;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Panel panel15;
-        private System.Windows.Forms.Button btnHome;
-        private System.Windows.Forms.Panel panel16;
+        private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button btnSupplies;
-        private System.Windows.Forms.Panel panel17;
-        private System.Windows.Forms.Button btnCustomers;
-        private System.Windows.Forms.Panel panel18;
-        private System.Windows.Forms.Button btnEmployees;
-        private System.Windows.Forms.Panel panel19;
-        private System.Windows.Forms.Button btnReports;
-        private System.Windows.Forms.Panel panel21;
-        private System.Windows.Forms.Button button11;
-        private System.Windows.Forms.Panel panel22;
-        private System.Windows.Forms.Panel panel23;
+        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Button btnProcessOrder;
+        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
+        private System.Windows.Forms.Button btnSuppliesOrder;
+        private System.Windows.Forms.Button btnInstallationOrder;
+        private System.Windows.Forms.FlowLayoutPanel pnlSupplies;
+        private System.Windows.Forms.Button btnViewSupplies;
+        private System.Windows.Forms.Button btnViewStatus;
         private System.Windows.Forms.Button btnLogout;
     }
 }

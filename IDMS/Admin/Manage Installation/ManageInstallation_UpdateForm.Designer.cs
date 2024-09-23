@@ -29,35 +29,6 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ManageInstallation_UpdateForm));
-            this.panel8 = new System.Windows.Forms.Panel();
-            this.textBox14 = new System.Windows.Forms.TextBox();
-            this.radioButton2 = new System.Windows.Forms.RadioButton();
-            this.textBox13 = new System.Windows.Forms.TextBox();
-            this.textBox6 = new System.Windows.Forms.TextBox();
-            this.radioButton1 = new System.Windows.Forms.RadioButton();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.button7 = new System.Windows.Forms.Button();
-            this.button6 = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button5 = new System.Windows.Forms.Button();
-            this.vScrollBar2 = new System.Windows.Forms.VScrollBar();
-            this.dataGridView2 = new System.Windows.Forms.DataGridView();
-            this.vScrollBar1 = new System.Windows.Forms.VScrollBar();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.textBox12 = new System.Windows.Forms.TextBox();
-            this.textBox11 = new System.Windows.Forms.TextBox();
-            this.textBox10 = new System.Windows.Forms.TextBox();
-            this.textBox9 = new System.Windows.Forms.TextBox();
-            this.textBox8 = new System.Windows.Forms.TextBox();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox7 = new System.Windows.Forms.TextBox();
-            this.button4 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.panel7 = new System.Windows.Forms.Panel();
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
             this.panel1 = new System.Windows.Forms.Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
@@ -71,8 +42,6 @@
             this.btnCustomers = new System.Windows.Forms.Button();
             this.panel16 = new System.Windows.Forms.Panel();
             this.btnEmployees = new System.Windows.Forms.Button();
-            this.panel17 = new System.Windows.Forms.Panel();
-            this.btnReports = new System.Windows.Forms.Button();
             this.panel18 = new System.Windows.Forms.Panel();
             this.button2 = new System.Windows.Forms.Button();
             this.panel19 = new System.Windows.Forms.Panel();
@@ -80,9 +49,25 @@
             this.panel20 = new System.Windows.Forms.Panel();
             this.panel21 = new System.Windows.Forms.Panel();
             this.btnLogout = new System.Windows.Forms.Button();
-            this.panel8.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            this.panel8 = new System.Windows.Forms.Panel();
+            this.txtPackageID = new System.Windows.Forms.TextBox();
+            this.pcboxPackagePhoto = new System.Windows.Forms.PictureBox();
+            this.txtMachineType = new System.Windows.Forms.TextBox();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.txtFileName = new System.Windows.Forms.TextBox();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.rbtnNotAvailable = new System.Windows.Forms.RadioButton();
+            this.rbtnAvailable = new System.Windows.Forms.RadioButton();
+            this.btnBrowse = new System.Windows.Forms.Button();
+            this.txtWarranty = new System.Windows.Forms.TextBox();
+            this.txtTotalPrice = new System.Windows.Forms.TextBox();
+            this.txtPackageName = new System.Windows.Forms.TextBox();
+            this.txtDownPayment = new System.Windows.Forms.TextBox();
+            this.txtCapacity = new System.Windows.Forms.TextBox();
+            this.btnNext = new System.Windows.Forms.Button();
+            this.btnCancel = new System.Windows.Forms.Button();
+            this.panel7 = new System.Windows.Forms.Panel();
             this.flowLayoutPanel1.SuspendLayout();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -90,367 +75,13 @@
             this.panel14.SuspendLayout();
             this.panel15.SuspendLayout();
             this.panel16.SuspendLayout();
-            this.panel17.SuspendLayout();
             this.panel18.SuspendLayout();
             this.panel19.SuspendLayout();
             this.panel21.SuspendLayout();
+            this.panel8.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pcboxPackagePhoto)).BeginInit();
+            this.panel2.SuspendLayout();
             this.SuspendLayout();
-            // 
-            // panel8
-            // 
-            this.panel8.BackgroundImage = global::IDMS.Properties.Resources.PHP__5_;
-            this.panel8.Controls.Add(this.textBox14);
-            this.panel8.Controls.Add(this.radioButton2);
-            this.panel8.Controls.Add(this.textBox13);
-            this.panel8.Controls.Add(this.textBox6);
-            this.panel8.Controls.Add(this.radioButton1);
-            this.panel8.Controls.Add(this.textBox4);
-            this.panel8.Controls.Add(this.button7);
-            this.panel8.Controls.Add(this.button6);
-            this.panel8.Controls.Add(this.button1);
-            this.panel8.Controls.Add(this.button5);
-            this.panel8.Controls.Add(this.vScrollBar2);
-            this.panel8.Controls.Add(this.dataGridView2);
-            this.panel8.Controls.Add(this.vScrollBar1);
-            this.panel8.Controls.Add(this.dataGridView1);
-            this.panel8.Controls.Add(this.textBox12);
-            this.panel8.Controls.Add(this.textBox11);
-            this.panel8.Controls.Add(this.textBox10);
-            this.panel8.Controls.Add(this.textBox9);
-            this.panel8.Controls.Add(this.textBox8);
-            this.panel8.Controls.Add(this.comboBox2);
-            this.panel8.Controls.Add(this.textBox3);
-            this.panel8.Controls.Add(this.textBox2);
-            this.panel8.Controls.Add(this.textBox1);
-            this.panel8.Controls.Add(this.textBox7);
-            this.panel8.Controls.Add(this.button4);
-            this.panel8.Controls.Add(this.button3);
-            this.panel8.Controls.Add(this.textBox5);
-            this.panel8.Cursor = System.Windows.Forms.Cursors.Arrow;
-            this.panel8.Location = new System.Drawing.Point(272, 66);
-            this.panel8.Name = "panel8";
-            this.panel8.Size = new System.Drawing.Size(985, 651);
-            this.panel8.TabIndex = 13;
-            // 
-            // textBox14
-            // 
-            this.textBox14.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox14.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox14.Location = new System.Drawing.Point(809, 170);
-            this.textBox14.Name = "textBox14";
-            this.textBox14.Size = new System.Drawing.Size(71, 24);
-            this.textBox14.TabIndex = 47;
-            // 
-            // radioButton2
-            // 
-            this.radioButton2.AutoSize = true;
-            this.radioButton2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(174)))), ((int)(((byte)(213)))), ((int)(((byte)(255)))));
-            this.radioButton2.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButton2.ForeColor = System.Drawing.Color.White;
-            this.radioButton2.Location = new System.Drawing.Point(400, 577);
-            this.radioButton2.Name = "radioButton2";
-            this.radioButton2.Size = new System.Drawing.Size(164, 29);
-            this.radioButton2.TabIndex = 43;
-            this.radioButton2.TabStop = true;
-            this.radioButton2.Text = "not available";
-            this.radioButton2.UseVisualStyleBackColor = false;
-            // 
-            // textBox13
-            // 
-            this.textBox13.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox13.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox13.Location = new System.Drawing.Point(540, 170);
-            this.textBox13.Name = "textBox13";
-            this.textBox13.Size = new System.Drawing.Size(59, 24);
-            this.textBox13.TabIndex = 46;
-            // 
-            // textBox6
-            // 
-            this.textBox6.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox6.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox6.Location = new System.Drawing.Point(227, 170);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(154, 24);
-            this.textBox6.TabIndex = 45;
-            // 
-            // radioButton1
-            // 
-            this.radioButton1.AutoSize = true;
-            this.radioButton1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(174)))), ((int)(((byte)(213)))), ((int)(((byte)(255)))));
-            this.radioButton1.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButton1.ForeColor = System.Drawing.Color.White;
-            this.radioButton1.Location = new System.Drawing.Point(237, 577);
-            this.radioButton1.Name = "radioButton1";
-            this.radioButton1.Size = new System.Drawing.Size(126, 29);
-            this.radioButton1.TabIndex = 42;
-            this.radioButton1.TabStop = true;
-            this.radioButton1.Text = "available";
-            this.radioButton1.UseVisualStyleBackColor = false;
-            // 
-            // textBox4
-            // 
-            this.textBox4.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox4.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(130)))), ((int)(((byte)(123)))), ((int)(((byte)(123)))));
-            this.textBox4.Location = new System.Drawing.Point(34, 580);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(165, 24);
-            this.textBox4.TabIndex = 41;
-            this.textBox4.Text = "Availability";
-            this.textBox4.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            // 
-            // button7
-            // 
-            this.button7.BackgroundImage = global::IDMS.Properties.Resources.Untitled_design__52_;
-            this.button7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button7.ForeColor = System.Drawing.Color.White;
-            this.button7.Location = new System.Drawing.Point(896, 428);
-            this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(48, 48);
-            this.button7.TabIndex = 40;
-            this.button7.Text = " ";
-            this.button7.UseVisualStyleBackColor = true;
-            this.button7.Visible = false;
-            // 
-            // button6
-            // 
-            this.button6.BackgroundImage = global::IDMS.Properties.Resources.Untitled_design__52_;
-            this.button6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button6.ForeColor = System.Drawing.Color.White;
-            this.button6.Location = new System.Drawing.Point(896, 299);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(48, 48);
-            this.button6.TabIndex = 39;
-            this.button6.Text = " ";
-            this.button6.UseVisualStyleBackColor = true;
-            this.button6.Visible = false;
-            // 
-            // button1
-            // 
-            this.button1.BackgroundImage = global::IDMS.Properties.Resources.Untitled_design__51_;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Location = new System.Drawing.Point(896, 428);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(48, 48);
-            this.button1.TabIndex = 38;
-            this.button1.Text = " ";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Visible = false;
-            // 
-            // button5
-            // 
-            this.button5.BackgroundImage = global::IDMS.Properties.Resources.Untitled_design__51_;
-            this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button5.ForeColor = System.Drawing.Color.White;
-            this.button5.Location = new System.Drawing.Point(896, 299);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(48, 48);
-            this.button5.TabIndex = 37;
-            this.button5.Text = " ";
-            this.button5.UseVisualStyleBackColor = true;
-            this.button5.Visible = false;
-            // 
-            // vScrollBar2
-            // 
-            this.vScrollBar2.Location = new System.Drawing.Point(851, 432);
-            this.vScrollBar2.Name = "vScrollBar2";
-            this.vScrollBar2.Size = new System.Drawing.Size(29, 87);
-            this.vScrollBar2.TabIndex = 36;
-            this.vScrollBar2.Visible = false;
-            // 
-            // dataGridView2
-            // 
-            this.dataGridView2.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(174)))), ((int)(((byte)(213)))), ((int)(((byte)(255)))));
-            this.dataGridView2.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView2.Location = new System.Drawing.Point(227, 432);
-            this.dataGridView2.Name = "dataGridView2";
-            this.dataGridView2.Size = new System.Drawing.Size(621, 87);
-            this.dataGridView2.TabIndex = 35;
-            this.dataGridView2.Visible = false;
-            // 
-            // vScrollBar1
-            // 
-            this.vScrollBar1.Location = new System.Drawing.Point(851, 300);
-            this.vScrollBar1.Name = "vScrollBar1";
-            this.vScrollBar1.Size = new System.Drawing.Size(29, 87);
-            this.vScrollBar1.TabIndex = 34;
-            this.vScrollBar1.Visible = false;
-            // 
-            // dataGridView1
-            // 
-            this.dataGridView1.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(174)))), ((int)(((byte)(213)))), ((int)(((byte)(255)))));
-            this.dataGridView1.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(227, 300);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(621, 87);
-            this.dataGridView1.TabIndex = 33;
-            this.dataGridView1.Visible = false;
-            // 
-            // textBox12
-            // 
-            this.textBox12.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox12.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox12.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(130)))), ((int)(((byte)(123)))), ((int)(((byte)(123)))));
-            this.textBox12.Location = new System.Drawing.Point(40, 329);
-            this.textBox12.Name = "textBox12";
-            this.textBox12.Size = new System.Drawing.Size(159, 24);
-            this.textBox12.TabIndex = 31;
-            this.textBox12.Text = "in Package Set";
-            this.textBox12.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            // 
-            // textBox11
-            // 
-            this.textBox11.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox11.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox11.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(130)))), ((int)(((byte)(123)))), ((int)(((byte)(123)))));
-            this.textBox11.Location = new System.Drawing.Point(63, 299);
-            this.textBox11.Name = "textBox11";
-            this.textBox11.Size = new System.Drawing.Size(136, 24);
-            this.textBox11.TabIndex = 32;
-            this.textBox11.Text = "Materials Used";
-            this.textBox11.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            // 
-            // textBox10
-            // 
-            this.textBox10.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox10.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox10.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(130)))), ((int)(((byte)(123)))), ((int)(((byte)(123)))));
-            this.textBox10.Location = new System.Drawing.Point(699, 169);
-            this.textBox10.Name = "textBox10";
-            this.textBox10.Size = new System.Drawing.Size(92, 24);
-            this.textBox10.TabIndex = 30;
-            this.textBox10.Text = "Capacity";
-            this.textBox10.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            // 
-            // textBox9
-            // 
-            this.textBox9.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox9.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox9.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(130)))), ((int)(((byte)(123)))), ((int)(((byte)(123)))));
-            this.textBox9.Location = new System.Drawing.Point(400, 169);
-            this.textBox9.Name = "textBox9";
-            this.textBox9.Size = new System.Drawing.Size(124, 24);
-            this.textBox9.TabIndex = 29;
-            this.textBox9.Text = "No. of Stages";
-            this.textBox9.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            // 
-            // textBox8
-            // 
-            this.textBox8.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox8.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox8.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(130)))), ((int)(((byte)(123)))), ((int)(((byte)(123)))));
-            this.textBox8.Location = new System.Drawing.Point(63, 233);
-            this.textBox8.Name = "textBox8";
-            this.textBox8.Size = new System.Drawing.Size(136, 24);
-            this.textBox8.TabIndex = 28;
-            this.textBox8.Text = "Machine Type";
-            this.textBox8.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            // 
-            // comboBox2
-            // 
-            this.comboBox2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(174)))), ((int)(((byte)(213)))), ((int)(((byte)(255)))));
-            this.comboBox2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.comboBox2.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBox2.ForeColor = System.Drawing.Color.White;
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Location = new System.Drawing.Point(227, 231);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(154, 30);
-            this.comboBox2.TabIndex = 27;
-            // 
-            // textBox3
-            // 
-            this.textBox3.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox3.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(130)))), ((int)(((byte)(123)))), ((int)(((byte)(123)))));
-            this.textBox3.Location = new System.Drawing.Point(34, 431);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(165, 24);
-            this.textBox3.TabIndex = 26;
-            this.textBox3.Text = "Freebies Included";
-            this.textBox3.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            // 
-            // textBox2
-            // 
-            this.textBox2.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox2.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(130)))), ((int)(((byte)(123)))), ((int)(((byte)(123)))));
-            this.textBox2.Location = new System.Drawing.Point(40, 169);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(159, 24);
-            this.textBox2.TabIndex = 25;
-            this.textBox2.Text = "Price of Package";
-            this.textBox2.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            // 
-            // textBox1
-            // 
-            this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox1.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(130)))), ((int)(((byte)(123)))), ((int)(((byte)(123)))));
-            this.textBox1.Location = new System.Drawing.Point(63, 96);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(136, 24);
-            this.textBox1.TabIndex = 24;
-            this.textBox1.Text = "Product Name";
-            this.textBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            // 
-            // textBox7
-            // 
-            this.textBox7.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox7.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox7.Location = new System.Drawing.Point(227, 97);
-            this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(706, 24);
-            this.textBox7.TabIndex = 16;
-            // 
-            // button4
-            // 
-            this.button4.BackColor = System.Drawing.Color.Transparent;
-            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button4.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button4.ForeColor = System.Drawing.Color.White;
-            this.button4.Location = new System.Drawing.Point(773, 564);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(171, 56);
-            this.button4.TabIndex = 11;
-            this.button4.Text = "Update Package";
-            this.button4.UseVisualStyleBackColor = false;
-            // 
-            // button3
-            // 
-            this.button3.BackColor = System.Drawing.Color.Transparent;
-            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button3.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.ForeColor = System.Drawing.Color.White;
-            this.button3.Location = new System.Drawing.Point(589, 564);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(171, 56);
-            this.button3.TabIndex = 10;
-            this.button3.Text = "Cancel";
-            this.button3.UseVisualStyleBackColor = false;
-            // 
-            // textBox5
-            // 
-            this.textBox5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(180)))), ((int)(((byte)(219)))), ((int)(((byte)(255)))));
-            this.textBox5.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox5.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox5.ForeColor = System.Drawing.Color.White;
-            this.textBox5.Location = new System.Drawing.Point(17, 16);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(271, 24);
-            this.textBox5.TabIndex = 5;
-            this.textBox5.Text = "Update Installation Package";
-            // 
-            // panel7
-            // 
-            this.panel7.BackgroundImage = global::IDMS.Properties.Resources.Untitled_design__29_;
-            this.panel7.Location = new System.Drawing.Point(248, -1);
-            this.panel7.Name = "panel7";
-            this.panel7.Size = new System.Drawing.Size(1033, 43);
-            this.panel7.TabIndex = 12;
             // 
             // flowLayoutPanel1
             // 
@@ -460,7 +91,6 @@
             this.flowLayoutPanel1.Controls.Add(this.panel14);
             this.flowLayoutPanel1.Controls.Add(this.panel15);
             this.flowLayoutPanel1.Controls.Add(this.panel16);
-            this.flowLayoutPanel1.Controls.Add(this.panel17);
             this.flowLayoutPanel1.Controls.Add(this.panel18);
             this.flowLayoutPanel1.Controls.Add(this.panel19);
             this.flowLayoutPanel1.Controls.Add(this.panel20);
@@ -618,35 +248,11 @@
             this.btnEmployees.Text = "CUSTOMERS";
             this.btnEmployees.UseVisualStyleBackColor = false;
             // 
-            // panel17
-            // 
-            this.panel17.BackColor = System.Drawing.Color.Transparent;
-            this.panel17.Controls.Add(this.btnReports);
-            this.panel17.Location = new System.Drawing.Point(3, 396);
-            this.panel17.Name = "panel17";
-            this.panel17.Size = new System.Drawing.Size(247, 43);
-            this.panel17.TabIndex = 2;
-            // 
-            // btnReports
-            // 
-            this.btnReports.BackColor = System.Drawing.Color.Transparent;
-            this.btnReports.Cursor = System.Windows.Forms.Cursors.Default;
-            this.btnReports.FlatAppearance.BorderSize = 0;
-            this.btnReports.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnReports.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnReports.ForeColor = System.Drawing.Color.White;
-            this.btnReports.Location = new System.Drawing.Point(-3, 3);
-            this.btnReports.Name = "btnReports";
-            this.btnReports.Size = new System.Drawing.Size(250, 40);
-            this.btnReports.TabIndex = 1;
-            this.btnReports.Text = "RESERVATIONS";
-            this.btnReports.UseVisualStyleBackColor = false;
-            // 
             // panel18
             // 
             this.panel18.BackColor = System.Drawing.Color.Transparent;
             this.panel18.Controls.Add(this.button2);
-            this.panel18.Location = new System.Drawing.Point(3, 445);
+            this.panel18.Location = new System.Drawing.Point(3, 396);
             this.panel18.Name = "panel18";
             this.panel18.Size = new System.Drawing.Size(247, 37);
             this.panel18.TabIndex = 0;
@@ -670,7 +276,7 @@
             // 
             this.panel19.BackColor = System.Drawing.Color.Transparent;
             this.panel19.Controls.Add(this.button8);
-            this.panel19.Location = new System.Drawing.Point(3, 488);
+            this.panel19.Location = new System.Drawing.Point(3, 439);
             this.panel19.Name = "panel19";
             this.panel19.Size = new System.Drawing.Size(247, 44);
             this.panel19.TabIndex = 0;
@@ -693,7 +299,7 @@
             // panel20
             // 
             this.panel20.BackColor = System.Drawing.Color.Transparent;
-            this.panel20.Location = new System.Drawing.Point(3, 538);
+            this.panel20.Location = new System.Drawing.Point(3, 489);
             this.panel20.Name = "panel20";
             this.panel20.Size = new System.Drawing.Size(247, 144);
             this.panel20.TabIndex = 3;
@@ -702,7 +308,7 @@
             // 
             this.panel21.BackColor = System.Drawing.Color.Transparent;
             this.panel21.Controls.Add(this.btnLogout);
-            this.panel21.Location = new System.Drawing.Point(3, 688);
+            this.panel21.Location = new System.Drawing.Point(3, 639);
             this.panel21.Name = "panel21";
             this.panel21.Size = new System.Drawing.Size(247, 46);
             this.panel21.TabIndex = 0;
@@ -721,6 +327,224 @@
             this.btnLogout.Text = "LOGOUT";
             this.btnLogout.UseVisualStyleBackColor = true;
             // 
+            // panel8
+            // 
+            this.panel8.BackgroundImage = global::IDMS.Properties.Resources.update_package_1;
+            this.panel8.Controls.Add(this.txtPackageID);
+            this.panel8.Controls.Add(this.pcboxPackagePhoto);
+            this.panel8.Controls.Add(this.txtMachineType);
+            this.panel8.Controls.Add(this.panel2);
+            this.panel8.Controls.Add(this.label4);
+            this.panel8.Controls.Add(this.label3);
+            this.panel8.Controls.Add(this.rbtnNotAvailable);
+            this.panel8.Controls.Add(this.rbtnAvailable);
+            this.panel8.Controls.Add(this.btnBrowse);
+            this.panel8.Controls.Add(this.txtWarranty);
+            this.panel8.Controls.Add(this.txtTotalPrice);
+            this.panel8.Controls.Add(this.txtPackageName);
+            this.panel8.Controls.Add(this.txtDownPayment);
+            this.panel8.Controls.Add(this.txtCapacity);
+            this.panel8.Controls.Add(this.btnNext);
+            this.panel8.Controls.Add(this.btnCancel);
+            this.panel8.Cursor = System.Windows.Forms.Cursors.Arrow;
+            this.panel8.Location = new System.Drawing.Point(272, 66);
+            this.panel8.Name = "panel8";
+            this.panel8.Size = new System.Drawing.Size(985, 651);
+            this.panel8.TabIndex = 13;
+            // 
+            // txtPackageID
+            // 
+            this.txtPackageID.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtPackageID.Enabled = false;
+            this.txtPackageID.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtPackageID.Location = new System.Drawing.Point(64, 277);
+            this.txtPackageID.Name = "txtPackageID";
+            this.txtPackageID.Size = new System.Drawing.Size(91, 24);
+            this.txtPackageID.TabIndex = 79;
+            this.txtPackageID.Visible = false;
+            // 
+            // pcboxPackagePhoto
+            // 
+            this.pcboxPackagePhoto.BackColor = System.Drawing.Color.Transparent;
+            this.pcboxPackagePhoto.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pcboxPackagePhoto.Location = new System.Drawing.Point(370, 81);
+            this.pcboxPackagePhoto.Name = "pcboxPackagePhoto";
+            this.pcboxPackagePhoto.Size = new System.Drawing.Size(227, 199);
+            this.pcboxPackagePhoto.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pcboxPackagePhoto.TabIndex = 78;
+            this.pcboxPackagePhoto.TabStop = false;
+            // 
+            // txtMachineType
+            // 
+            this.txtMachineType.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtMachineType.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtMachineType.Location = new System.Drawing.Point(644, 387);
+            this.txtMachineType.Name = "txtMachineType";
+            this.txtMachineType.Size = new System.Drawing.Size(137, 24);
+            this.txtMachineType.TabIndex = 77;
+            // 
+            // panel2
+            // 
+            this.panel2.BackgroundImage = global::IDMS.Properties.Resources.textbox;
+            this.panel2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.panel2.Controls.Add(this.txtFileName);
+            this.panel2.Location = new System.Drawing.Point(584, 486);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(341, 37);
+            this.panel2.TabIndex = 76;
+            // 
+            // txtFileName
+            // 
+            this.txtFileName.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtFileName.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtFileName.Location = new System.Drawing.Point(8, 4);
+            this.txtFileName.Name = "txtFileName";
+            this.txtFileName.Size = new System.Drawing.Size(330, 24);
+            this.txtFileName.TabIndex = 0;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.BackColor = System.Drawing.Color.Transparent;
+            this.label4.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(148)))), ((int)(((byte)(187)))), ((int)(((byte)(255)))));
+            this.label4.Location = new System.Drawing.Point(464, 494);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(122, 25);
+            this.label4.TabIndex = 75;
+            this.label4.Text = "FILE NAME ";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.BackColor = System.Drawing.Color.Transparent;
+            this.label3.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.Color.White;
+            this.label3.Location = new System.Drawing.Point(16, 17);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(275, 23);
+            this.label3.TabIndex = 74;
+            this.label3.Text = "Update Installation Package";
+            // 
+            // rbtnNotAvailable
+            // 
+            this.rbtnNotAvailable.AutoSize = true;
+            this.rbtnNotAvailable.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(174)))), ((int)(((byte)(213)))), ((int)(((byte)(255)))));
+            this.rbtnNotAvailable.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rbtnNotAvailable.ForeColor = System.Drawing.Color.White;
+            this.rbtnNotAvailable.Location = new System.Drawing.Point(397, 578);
+            this.rbtnNotAvailable.Name = "rbtnNotAvailable";
+            this.rbtnNotAvailable.Size = new System.Drawing.Size(168, 27);
+            this.rbtnNotAvailable.TabIndex = 73;
+            this.rbtnNotAvailable.TabStop = true;
+            this.rbtnNotAvailable.Text = "NOT AVAILABLE";
+            this.rbtnNotAvailable.UseVisualStyleBackColor = false;
+            // 
+            // rbtnAvailable
+            // 
+            this.rbtnAvailable.AutoSize = true;
+            this.rbtnAvailable.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(174)))), ((int)(((byte)(213)))), ((int)(((byte)(255)))));
+            this.rbtnAvailable.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rbtnAvailable.ForeColor = System.Drawing.Color.White;
+            this.rbtnAvailable.Location = new System.Drawing.Point(232, 578);
+            this.rbtnAvailable.Name = "rbtnAvailable";
+            this.rbtnAvailable.Size = new System.Drawing.Size(125, 27);
+            this.rbtnAvailable.TabIndex = 72;
+            this.rbtnAvailable.TabStop = true;
+            this.rbtnAvailable.Text = "AVAILABLE";
+            this.rbtnAvailable.UseVisualStyleBackColor = false;
+            // 
+            // btnBrowse
+            // 
+            this.btnBrowse.BackColor = System.Drawing.Color.Transparent;
+            this.btnBrowse.BackgroundImage = global::IDMS.Properties.Resources.Untitled_design__89_;
+            this.btnBrowse.Location = new System.Drawing.Point(619, 69);
+            this.btnBrowse.Name = "btnBrowse";
+            this.btnBrowse.Size = new System.Drawing.Size(45, 46);
+            this.btnBrowse.TabIndex = 71;
+            this.btnBrowse.UseVisualStyleBackColor = false;
+            this.btnBrowse.Click += new System.EventHandler(this.btnBrowse_Click);
+            // 
+            // txtWarranty
+            // 
+            this.txtWarranty.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtWarranty.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtWarranty.Location = new System.Drawing.Point(281, 496);
+            this.txtWarranty.Name = "txtWarranty";
+            this.txtWarranty.Size = new System.Drawing.Size(76, 24);
+            this.txtWarranty.TabIndex = 70;
+            // 
+            // txtTotalPrice
+            // 
+            this.txtTotalPrice.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtTotalPrice.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtTotalPrice.Location = new System.Drawing.Point(281, 442);
+            this.txtTotalPrice.Name = "txtTotalPrice";
+            this.txtTotalPrice.Size = new System.Drawing.Size(89, 24);
+            this.txtTotalPrice.TabIndex = 69;
+            // 
+            // txtPackageName
+            // 
+            this.txtPackageName.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtPackageName.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtPackageName.Location = new System.Drawing.Point(281, 333);
+            this.txtPackageName.Name = "txtPackageName";
+            this.txtPackageName.Size = new System.Drawing.Size(629, 24);
+            this.txtPackageName.TabIndex = 68;
+            // 
+            // txtDownPayment
+            // 
+            this.txtDownPayment.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtDownPayment.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtDownPayment.Location = new System.Drawing.Point(644, 442);
+            this.txtDownPayment.Name = "txtDownPayment";
+            this.txtDownPayment.Size = new System.Drawing.Size(88, 24);
+            this.txtDownPayment.TabIndex = 67;
+            // 
+            // txtCapacity
+            // 
+            this.txtCapacity.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtCapacity.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtCapacity.Location = new System.Drawing.Point(281, 387);
+            this.txtCapacity.Name = "txtCapacity";
+            this.txtCapacity.Size = new System.Drawing.Size(89, 24);
+            this.txtCapacity.TabIndex = 65;
+            // 
+            // btnNext
+            // 
+            this.btnNext.BackColor = System.Drawing.Color.Transparent;
+            this.btnNext.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnNext.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnNext.ForeColor = System.Drawing.Color.White;
+            this.btnNext.Location = new System.Drawing.Point(792, 564);
+            this.btnNext.Name = "btnNext";
+            this.btnNext.Size = new System.Drawing.Size(152, 56);
+            this.btnNext.TabIndex = 11;
+            this.btnNext.Text = "Next Page";
+            this.btnNext.UseVisualStyleBackColor = false;
+            this.btnNext.Click += new System.EventHandler(this.btnNext_Click);
+            // 
+            // btnCancel
+            // 
+            this.btnCancel.BackColor = System.Drawing.Color.Transparent;
+            this.btnCancel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnCancel.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCancel.ForeColor = System.Drawing.Color.White;
+            this.btnCancel.Location = new System.Drawing.Point(625, 564);
+            this.btnCancel.Name = "btnCancel";
+            this.btnCancel.Size = new System.Drawing.Size(151, 56);
+            this.btnCancel.TabIndex = 10;
+            this.btnCancel.Text = "Cancel";
+            this.btnCancel.UseVisualStyleBackColor = false;
+            // 
+            // panel7
+            // 
+            this.panel7.BackgroundImage = global::IDMS.Properties.Resources.Untitled_design__29_;
+            this.panel7.Location = new System.Drawing.Point(248, -1);
+            this.panel7.Name = "panel7";
+            this.panel7.Size = new System.Drawing.Size(1033, 43);
+            this.panel7.TabIndex = 12;
+            // 
             // ManageInstallation_UpdateForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -735,10 +559,6 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "ManageInstallation_UpdateForm";
             this.Load += new System.EventHandler(this.ManageInstallation_UpdateForm_Load);
-            this.panel8.ResumeLayout(false);
-            this.panel8.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.flowLayoutPanel1.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
@@ -747,10 +567,14 @@
             this.panel14.ResumeLayout(false);
             this.panel15.ResumeLayout(false);
             this.panel16.ResumeLayout(false);
-            this.panel17.ResumeLayout(false);
             this.panel18.ResumeLayout(false);
             this.panel19.ResumeLayout(false);
             this.panel21.ResumeLayout(false);
+            this.panel8.ResumeLayout(false);
+            this.panel8.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pcboxPackagePhoto)).EndInit();
+            this.panel2.ResumeLayout(false);
+            this.panel2.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -759,33 +583,8 @@
 
         private System.Windows.Forms.Panel panel7;
         private System.Windows.Forms.Panel panel8;
-        private System.Windows.Forms.TextBox textBox7;
-        private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.TextBox textBox5;
-        private System.Windows.Forms.TextBox textBox12;
-        private System.Windows.Forms.TextBox textBox11;
-        private System.Windows.Forms.TextBox textBox10;
-        private System.Windows.Forms.TextBox textBox9;
-        private System.Windows.Forms.TextBox textBox8;
-        private System.Windows.Forms.ComboBox comboBox2;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.VScrollBar vScrollBar2;
-        private System.Windows.Forms.DataGridView dataGridView2;
-        private System.Windows.Forms.VScrollBar vScrollBar1;
-        private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.Button button7;
-        private System.Windows.Forms.Button button6;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button5;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.RadioButton radioButton2;
-        private System.Windows.Forms.RadioButton radioButton1;
-        private System.Windows.Forms.TextBox textBox14;
-        private System.Windows.Forms.TextBox textBox13;
-        private System.Windows.Forms.TextBox textBox6;
+        private System.Windows.Forms.Button btnNext;
+        private System.Windows.Forms.Button btnCancel;
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.PictureBox pictureBox1;
@@ -799,8 +598,6 @@
         private System.Windows.Forms.Button btnCustomers;
         private System.Windows.Forms.Panel panel16;
         private System.Windows.Forms.Button btnEmployees;
-        private System.Windows.Forms.Panel panel17;
-        private System.Windows.Forms.Button btnReports;
         private System.Windows.Forms.Panel panel18;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Panel panel19;
@@ -808,5 +605,20 @@
         private System.Windows.Forms.Panel panel20;
         private System.Windows.Forms.Panel panel21;
         private System.Windows.Forms.Button btnLogout;
+        private System.Windows.Forms.Button btnBrowse;
+        private System.Windows.Forms.TextBox txtWarranty;
+        private System.Windows.Forms.TextBox txtTotalPrice;
+        private System.Windows.Forms.TextBox txtPackageName;
+        private System.Windows.Forms.TextBox txtDownPayment;
+        private System.Windows.Forms.TextBox txtCapacity;
+        private System.Windows.Forms.RadioButton rbtnNotAvailable;
+        private System.Windows.Forms.RadioButton rbtnAvailable;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.TextBox txtFileName;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.TextBox txtMachineType;
+        private System.Windows.Forms.PictureBox pcboxPackagePhoto;
+        private System.Windows.Forms.TextBox txtPackageID;
     }
 }

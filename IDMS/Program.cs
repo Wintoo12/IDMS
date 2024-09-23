@@ -1,4 +1,9 @@
-﻿using System;
+﻿using IDMS.Admin;
+using IDMS.Admin.Manage_Customer;
+using IDMS.Staff.Manage_Customer;
+using IDMS.Staff.Process_Order.Installations;
+using IDMS.Staff.Process_Order.Supplies;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;

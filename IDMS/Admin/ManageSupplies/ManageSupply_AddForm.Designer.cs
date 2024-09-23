@@ -29,32 +29,8 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ManageSupply_Add_form));
-            this.panel8 = new System.Windows.Forms.Panel();
-            this.panel9 = new System.Windows.Forms.Panel();
-            this.panel10 = new System.Windows.Forms.Panel();
-            this.txtPhoneNumber = new System.Windows.Forms.TextBox();
-            this.txtSupplierName = new System.Windows.Forms.TextBox();
-            this.textBox10 = new System.Windows.Forms.TextBox();
-            this.textBox11 = new System.Windows.Forms.TextBox();
-            this.textBox9 = new System.Windows.Forms.TextBox();
-            this.textBox8 = new System.Windows.Forms.TextBox();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
-            this.txtProductName = new System.Windows.Forms.TextBox();
-            this.vScrollBar1 = new System.Windows.Forms.VScrollBar();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.btnAdd = new System.Windows.Forms.Button();
-            this.btnCancel = new System.Windows.Forms.Button();
-            this.textBox6 = new System.Windows.Forms.TextBox();
-            this.button2 = new System.Windows.Forms.Button();
-            this.radioButton2 = new System.Windows.Forms.RadioButton();
-            this.radioButton1 = new System.Windows.Forms.RadioButton();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.button1 = new System.Windows.Forms.Button();
-            this.panel7 = new System.Windows.Forms.Panel();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle10 = new System.Windows.Forms.DataGridViewCellStyle();
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
             this.panel1 = new System.Windows.Forms.Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
@@ -68,8 +44,6 @@
             this.btnCustomers = new System.Windows.Forms.Button();
             this.panel16 = new System.Windows.Forms.Panel();
             this.btnEmployees = new System.Windows.Forms.Button();
-            this.panel17 = new System.Windows.Forms.Panel();
-            this.btnReports = new System.Windows.Forms.Button();
             this.panel18 = new System.Windows.Forms.Panel();
             this.button5 = new System.Windows.Forms.Button();
             this.panel19 = new System.Windows.Forms.Panel();
@@ -77,10 +51,36 @@
             this.panel20 = new System.Windows.Forms.Panel();
             this.panel21 = new System.Windows.Forms.Panel();
             this.btnLogout = new System.Windows.Forms.Button();
-            this.panel8.SuspendLayout();
-            this.panel9.SuspendLayout();
-            this.panel10.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            this.panel8 = new System.Windows.Forms.Panel();
+            this.label10 = new System.Windows.Forms.Label();
+            this.pnlPhysical = new System.Windows.Forms.Panel();
+            this.label5 = new System.Windows.Forms.Label();
+            this.txtPhonNum = new System.Windows.Forms.TextBox();
+            this.label6 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.txtSupplierNamePy = new System.Windows.Forms.TextBox();
+            this.label8 = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
+            this.pcboxProductPhoto = new System.Windows.Forms.PictureBox();
+            this.txtThreshold = new System.Windows.Forms.TextBox();
+            this.txtPrice = new System.Windows.Forms.TextBox();
+            this.txtUnit = new System.Windows.Forms.TextBox();
+            this.txtQuantity = new System.Windows.Forms.TextBox();
+            this.label3 = new System.Windows.Forms.Label();
+            this.pnlOnline = new System.Windows.Forms.Panel();
+            this.label9 = new System.Windows.Forms.Label();
+            this.textBox9 = new System.Windows.Forms.TextBox();
+            this.txtLink = new System.Windows.Forms.TextBox();
+            this.txtSupplierNameOL = new System.Windows.Forms.TextBox();
+            this.txtProductName = new System.Windows.Forms.TextBox();
+            this.dgvProducts = new System.Windows.Forms.DataGridView();
+            this.btnAdd = new System.Windows.Forms.Button();
+            this.btnCancel = new System.Windows.Forms.Button();
+            this.txtFilename = new System.Windows.Forms.TextBox();
+            this.btnBrowse = new System.Windows.Forms.Button();
+            this.rbtnPhysical = new System.Windows.Forms.RadioButton();
+            this.rbtnOnline = new System.Windows.Forms.RadioButton();
+            this.panel7 = new System.Windows.Forms.Panel();
             this.flowLayoutPanel1.SuspendLayout();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -88,328 +88,15 @@
             this.panel14.SuspendLayout();
             this.panel15.SuspendLayout();
             this.panel16.SuspendLayout();
-            this.panel17.SuspendLayout();
             this.panel18.SuspendLayout();
             this.panel19.SuspendLayout();
             this.panel21.SuspendLayout();
+            this.panel8.SuspendLayout();
+            this.pnlPhysical.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pcboxProductPhoto)).BeginInit();
+            this.pnlOnline.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvProducts)).BeginInit();
             this.SuspendLayout();
-            // 
-            // panel8
-            // 
-            this.panel8.BackgroundImage = global::IDMS.Properties.Resources.Untitled_design__48_;
-            this.panel8.Controls.Add(this.panel9);
-            this.panel8.Controls.Add(this.comboBox2);
-            this.panel8.Controls.Add(this.txtProductName);
-            this.panel8.Controls.Add(this.vScrollBar1);
-            this.panel8.Controls.Add(this.dataGridView1);
-            this.panel8.Controls.Add(this.btnAdd);
-            this.panel8.Controls.Add(this.btnCancel);
-            this.panel8.Controls.Add(this.textBox6);
-            this.panel8.Controls.Add(this.button2);
-            this.panel8.Controls.Add(this.radioButton2);
-            this.panel8.Controls.Add(this.radioButton1);
-            this.panel8.Controls.Add(this.textBox5);
-            this.panel8.Controls.Add(this.textBox4);
-            this.panel8.Controls.Add(this.textBox3);
-            this.panel8.Controls.Add(this.textBox2);
-            this.panel8.Controls.Add(this.textBox1);
-            this.panel8.Controls.Add(this.button1);
-            this.panel8.Cursor = System.Windows.Forms.Cursors.Arrow;
-            this.panel8.Location = new System.Drawing.Point(272, 66);
-            this.panel8.Name = "panel8";
-            this.panel8.Size = new System.Drawing.Size(985, 651);
-            this.panel8.TabIndex = 7;
-            // 
-            // panel9
-            // 
-            this.panel9.BackgroundImage = global::IDMS.Properties.Resources.Untitled_design__50_;
-            this.panel9.Controls.Add(this.panel10);
-            this.panel9.Controls.Add(this.textBox9);
-            this.panel9.Controls.Add(this.textBox8);
-            this.panel9.Location = new System.Drawing.Point(514, 415);
-            this.panel9.Name = "panel9";
-            this.panel9.Size = new System.Drawing.Size(430, 98);
-            this.panel9.TabIndex = 18;
-            // 
-            // panel10
-            // 
-            this.panel10.BackgroundImage = global::IDMS.Properties.Resources.Untitled_design__50_;
-            this.panel10.Controls.Add(this.txtPhoneNumber);
-            this.panel10.Controls.Add(this.txtSupplierName);
-            this.panel10.Controls.Add(this.textBox10);
-            this.panel10.Controls.Add(this.textBox11);
-            this.panel10.Location = new System.Drawing.Point(0, 0);
-            this.panel10.Name = "panel10";
-            this.panel10.Size = new System.Drawing.Size(430, 98);
-            this.panel10.TabIndex = 21;
-            this.panel10.Visible = false;
-            // 
-            // txtPhoneNumber
-            // 
-            this.txtPhoneNumber.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtPhoneNumber.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtPhoneNumber.Location = new System.Drawing.Point(159, 61);
-            this.txtPhoneNumber.Name = "txtPhoneNumber";
-            this.txtPhoneNumber.Size = new System.Drawing.Size(258, 19);
-            this.txtPhoneNumber.TabIndex = 21;
-            // 
-            // txtSupplierName
-            // 
-            this.txtSupplierName.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtSupplierName.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtSupplierName.Location = new System.Drawing.Point(159, 18);
-            this.txtSupplierName.Name = "txtSupplierName";
-            this.txtSupplierName.Size = new System.Drawing.Size(258, 19);
-            this.txtSupplierName.TabIndex = 21;
-            // 
-            // textBox10
-            // 
-            this.textBox10.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox10.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox10.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(130)))), ((int)(((byte)(123)))), ((int)(((byte)(123)))));
-            this.textBox10.Location = new System.Drawing.Point(3, 60);
-            this.textBox10.Name = "textBox10";
-            this.textBox10.Size = new System.Drawing.Size(136, 20);
-            this.textBox10.TabIndex = 20;
-            this.textBox10.Text = "Phone Number ";
-            this.textBox10.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            // 
-            // textBox11
-            // 
-            this.textBox11.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox11.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox11.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(130)))), ((int)(((byte)(123)))), ((int)(((byte)(123)))));
-            this.textBox11.Location = new System.Drawing.Point(3, 16);
-            this.textBox11.Name = "textBox11";
-            this.textBox11.Size = new System.Drawing.Size(136, 20);
-            this.textBox11.TabIndex = 19;
-            this.textBox11.Text = "Supplier Name";
-            this.textBox11.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            // 
-            // textBox9
-            // 
-            this.textBox9.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox9.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox9.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(130)))), ((int)(((byte)(123)))), ((int)(((byte)(123)))));
-            this.textBox9.Location = new System.Drawing.Point(3, 60);
-            this.textBox9.Name = "textBox9";
-            this.textBox9.Size = new System.Drawing.Size(136, 20);
-            this.textBox9.TabIndex = 20;
-            this.textBox9.Text = "Link for Stock";
-            this.textBox9.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            // 
-            // textBox8
-            // 
-            this.textBox8.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox8.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox8.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(130)))), ((int)(((byte)(123)))), ((int)(((byte)(123)))));
-            this.textBox8.Location = new System.Drawing.Point(3, 16);
-            this.textBox8.Name = "textBox8";
-            this.textBox8.Size = new System.Drawing.Size(136, 20);
-            this.textBox8.TabIndex = 19;
-            this.textBox8.Text = "Supplier Name";
-            this.textBox8.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            // 
-            // comboBox2
-            // 
-            this.comboBox2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(174)))), ((int)(((byte)(213)))), ((int)(((byte)(255)))));
-            this.comboBox2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.comboBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBox2.ForeColor = System.Drawing.Color.White;
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Location = new System.Drawing.Point(227, 159);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(706, 28);
-            this.comboBox2.TabIndex = 17;
-            // 
-            // txtProductName
-            // 
-            this.txtProductName.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtProductName.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtProductName.Location = new System.Drawing.Point(227, 97);
-            this.txtProductName.Name = "txtProductName";
-            this.txtProductName.Size = new System.Drawing.Size(706, 24);
-            this.txtProductName.TabIndex = 16;
-            // 
-            // vScrollBar1
-            // 
-            this.vScrollBar1.Location = new System.Drawing.Point(915, 216);
-            this.vScrollBar1.Name = "vScrollBar1";
-            this.vScrollBar1.Size = new System.Drawing.Size(29, 129);
-            this.vScrollBar1.TabIndex = 15;
-            this.vScrollBar1.Visible = false;
-            // 
-            // dataGridView1
-            // 
-            this.dataGridView1.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(174)))), ((int)(((byte)(213)))), ((int)(((byte)(255)))));
-            this.dataGridView1.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(215, 216);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(697, 129);
-            this.dataGridView1.TabIndex = 14;
-            this.dataGridView1.Visible = false;
-            // 
-            // btnAdd
-            // 
-            this.btnAdd.BackColor = System.Drawing.Color.Transparent;
-            this.btnAdd.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnAdd.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAdd.ForeColor = System.Drawing.Color.White;
-            this.btnAdd.Location = new System.Drawing.Point(773, 564);
-            this.btnAdd.Name = "btnAdd";
-            this.btnAdd.Size = new System.Drawing.Size(171, 56);
-            this.btnAdd.TabIndex = 11;
-            this.btnAdd.Text = "Add to Stock";
-            this.btnAdd.UseVisualStyleBackColor = false;
-            this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
-            // 
-            // btnCancel
-            // 
-            this.btnCancel.BackColor = System.Drawing.Color.Transparent;
-            this.btnCancel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnCancel.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCancel.ForeColor = System.Drawing.Color.White;
-            this.btnCancel.Location = new System.Drawing.Point(589, 564);
-            this.btnCancel.Name = "btnCancel";
-            this.btnCancel.Size = new System.Drawing.Size(171, 56);
-            this.btnCancel.TabIndex = 10;
-            this.btnCancel.Text = "Cancel";
-            this.btnCancel.UseVisualStyleBackColor = false;
-            this.btnCancel.Click += new System.EventHandler(this.btnCancel_Click);
-            // 
-            // textBox6
-            // 
-            this.textBox6.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox6.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox6.Location = new System.Drawing.Point(227, 579);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(154, 24);
-            this.textBox6.TabIndex = 9;
-            // 
-            // button2
-            // 
-            this.button2.BackColor = System.Drawing.Color.Transparent;
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.ForeColor = System.Drawing.Color.White;
-            this.button2.Location = new System.Drawing.Point(387, 571);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(100, 40);
-            this.button2.TabIndex = 8;
-            this.button2.Text = "browse";
-            this.button2.UseVisualStyleBackColor = false;
-            // 
-            // radioButton2
-            // 
-            this.radioButton2.AutoSize = true;
-            this.radioButton2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(174)))), ((int)(((byte)(213)))), ((int)(((byte)(255)))));
-            this.radioButton2.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButton2.ForeColor = System.Drawing.Color.White;
-            this.radioButton2.Location = new System.Drawing.Point(236, 472);
-            this.radioButton2.Name = "radioButton2";
-            this.radioButton2.Size = new System.Drawing.Size(210, 23);
-            this.radioButton2.TabIndex = 7;
-            this.radioButton2.TabStop = true;
-            this.radioButton2.Text = "through a physical store";
-            this.radioButton2.UseVisualStyleBackColor = false;
-            // 
-            // radioButton1
-            // 
-            this.radioButton1.AutoSize = true;
-            this.radioButton1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(174)))), ((int)(((byte)(213)))), ((int)(((byte)(255)))));
-            this.radioButton1.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButton1.ForeColor = System.Drawing.Color.White;
-            this.radioButton1.Location = new System.Drawing.Point(236, 426);
-            this.radioButton1.Name = "radioButton1";
-            this.radioButton1.Size = new System.Drawing.Size(203, 23);
-            this.radioButton1.TabIndex = 6;
-            this.radioButton1.TabStop = true;
-            this.radioButton1.Text = "through an online store";
-            this.radioButton1.UseVisualStyleBackColor = false;
-            // 
-            // textBox5
-            // 
-            this.textBox5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(180)))), ((int)(((byte)(219)))), ((int)(((byte)(255)))));
-            this.textBox5.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox5.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox5.ForeColor = System.Drawing.Color.White;
-            this.textBox5.Location = new System.Drawing.Point(17, 16);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(150, 24);
-            this.textBox5.TabIndex = 5;
-            this.textBox5.Text = "Add New Stock";
-            // 
-            // textBox4
-            // 
-            this.textBox4.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox4.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(130)))), ((int)(((byte)(123)))), ((int)(((byte)(123)))));
-            this.textBox4.Location = new System.Drawing.Point(51, 579);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(136, 24);
-            this.textBox4.TabIndex = 4;
-            this.textBox4.Text = "Upload Photo";
-            this.textBox4.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            // 
-            // textBox3
-            // 
-            this.textBox3.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox3.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(130)))), ((int)(((byte)(123)))), ((int)(((byte)(123)))));
-            this.textBox3.Location = new System.Drawing.Point(51, 426);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(136, 24);
-            this.textBox3.TabIndex = 3;
-            this.textBox3.Text = "Supplier";
-            this.textBox3.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            // 
-            // textBox2
-            // 
-            this.textBox2.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox2.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(130)))), ((int)(((byte)(123)))), ((int)(((byte)(123)))));
-            this.textBox2.Location = new System.Drawing.Point(51, 159);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(136, 24);
-            this.textBox2.TabIndex = 2;
-            this.textBox2.Text = "Category";
-            this.textBox2.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            // 
-            // textBox1
-            // 
-            this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox1.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(130)))), ((int)(((byte)(123)))), ((int)(((byte)(123)))));
-            this.textBox1.Location = new System.Drawing.Point(51, 97);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(136, 24);
-            this.textBox1.TabIndex = 1;
-            this.textBox1.Text = "Product Name";
-            this.textBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            // 
-            // button1
-            // 
-            this.button1.BackgroundImage = global::IDMS.Properties.Resources.Untitled_design__49_;
-            this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Location = new System.Drawing.Point(215, 360);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(729, 37);
-            this.button1.TabIndex = 0;
-            this.button1.Text = "Add New";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Visible = false;
-            // 
-            // panel7
-            // 
-            this.panel7.BackgroundImage = global::IDMS.Properties.Resources.Untitled_design__29_;
-            this.panel7.Location = new System.Drawing.Point(247, 0);
-            this.panel7.Name = "panel7";
-            this.panel7.Size = new System.Drawing.Size(1035, 43);
-            this.panel7.TabIndex = 4;
             // 
             // flowLayoutPanel1
             // 
@@ -419,7 +106,6 @@
             this.flowLayoutPanel1.Controls.Add(this.panel14);
             this.flowLayoutPanel1.Controls.Add(this.panel15);
             this.flowLayoutPanel1.Controls.Add(this.panel16);
-            this.flowLayoutPanel1.Controls.Add(this.panel17);
             this.flowLayoutPanel1.Controls.Add(this.panel18);
             this.flowLayoutPanel1.Controls.Add(this.panel19);
             this.flowLayoutPanel1.Controls.Add(this.panel20);
@@ -577,35 +263,11 @@
             this.btnEmployees.Text = "CUSTOMERS";
             this.btnEmployees.UseVisualStyleBackColor = false;
             // 
-            // panel17
-            // 
-            this.panel17.BackColor = System.Drawing.Color.Transparent;
-            this.panel17.Controls.Add(this.btnReports);
-            this.panel17.Location = new System.Drawing.Point(3, 396);
-            this.panel17.Name = "panel17";
-            this.panel17.Size = new System.Drawing.Size(247, 43);
-            this.panel17.TabIndex = 2;
-            // 
-            // btnReports
-            // 
-            this.btnReports.BackColor = System.Drawing.Color.Transparent;
-            this.btnReports.Cursor = System.Windows.Forms.Cursors.Default;
-            this.btnReports.FlatAppearance.BorderSize = 0;
-            this.btnReports.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnReports.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnReports.ForeColor = System.Drawing.Color.White;
-            this.btnReports.Location = new System.Drawing.Point(-3, 3);
-            this.btnReports.Name = "btnReports";
-            this.btnReports.Size = new System.Drawing.Size(250, 40);
-            this.btnReports.TabIndex = 1;
-            this.btnReports.Text = "RESERVATIONS";
-            this.btnReports.UseVisualStyleBackColor = false;
-            // 
             // panel18
             // 
             this.panel18.BackColor = System.Drawing.Color.Transparent;
             this.panel18.Controls.Add(this.button5);
-            this.panel18.Location = new System.Drawing.Point(3, 445);
+            this.panel18.Location = new System.Drawing.Point(3, 396);
             this.panel18.Name = "panel18";
             this.panel18.Size = new System.Drawing.Size(247, 37);
             this.panel18.TabIndex = 0;
@@ -629,7 +291,7 @@
             // 
             this.panel19.BackColor = System.Drawing.Color.Transparent;
             this.panel19.Controls.Add(this.button6);
-            this.panel19.Location = new System.Drawing.Point(3, 488);
+            this.panel19.Location = new System.Drawing.Point(3, 439);
             this.panel19.Name = "panel19";
             this.panel19.Size = new System.Drawing.Size(247, 44);
             this.panel19.TabIndex = 0;
@@ -652,7 +314,7 @@
             // panel20
             // 
             this.panel20.BackColor = System.Drawing.Color.Transparent;
-            this.panel20.Location = new System.Drawing.Point(3, 538);
+            this.panel20.Location = new System.Drawing.Point(3, 489);
             this.panel20.Name = "panel20";
             this.panel20.Size = new System.Drawing.Size(247, 144);
             this.panel20.TabIndex = 3;
@@ -661,7 +323,7 @@
             // 
             this.panel21.BackColor = System.Drawing.Color.Transparent;
             this.panel21.Controls.Add(this.btnLogout);
-            this.panel21.Location = new System.Drawing.Point(3, 688);
+            this.panel21.Location = new System.Drawing.Point(3, 639);
             this.panel21.Name = "panel21";
             this.panel21.Size = new System.Drawing.Size(247, 46);
             this.panel21.TabIndex = 0;
@@ -680,6 +342,401 @@
             this.btnLogout.Text = "LOGOUT";
             this.btnLogout.UseVisualStyleBackColor = true;
             // 
+            // panel8
+            // 
+            this.panel8.BackgroundImage = global::IDMS.Properties.Resources.PHP__20_;
+            this.panel8.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.panel8.Controls.Add(this.label10);
+            this.panel8.Controls.Add(this.pnlPhysical);
+            this.panel8.Controls.Add(this.label8);
+            this.panel8.Controls.Add(this.label7);
+            this.panel8.Controls.Add(this.pcboxProductPhoto);
+            this.panel8.Controls.Add(this.txtThreshold);
+            this.panel8.Controls.Add(this.txtPrice);
+            this.panel8.Controls.Add(this.txtUnit);
+            this.panel8.Controls.Add(this.txtQuantity);
+            this.panel8.Controls.Add(this.label3);
+            this.panel8.Controls.Add(this.pnlOnline);
+            this.panel8.Controls.Add(this.txtProductName);
+            this.panel8.Controls.Add(this.dgvProducts);
+            this.panel8.Controls.Add(this.btnAdd);
+            this.panel8.Controls.Add(this.btnCancel);
+            this.panel8.Controls.Add(this.txtFilename);
+            this.panel8.Controls.Add(this.btnBrowse);
+            this.panel8.Controls.Add(this.rbtnPhysical);
+            this.panel8.Controls.Add(this.rbtnOnline);
+            this.panel8.Cursor = System.Windows.Forms.Cursors.Arrow;
+            this.panel8.Location = new System.Drawing.Point(272, 66);
+            this.panel8.Name = "panel8";
+            this.panel8.Size = new System.Drawing.Size(985, 651);
+            this.panel8.TabIndex = 7;
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.BackColor = System.Drawing.Color.Transparent;
+            this.label10.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Bold);
+            this.label10.ForeColor = System.Drawing.Color.White;
+            this.label10.Location = new System.Drawing.Point(16, 16);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(152, 23);
+            this.label10.TabIndex = 25;
+            this.label10.Text = "Add New Stock";
+            // 
+            // pnlPhysical
+            // 
+            this.pnlPhysical.BackgroundImage = global::IDMS.Properties.Resources.Untitled_design__50_;
+            this.pnlPhysical.Controls.Add(this.label5);
+            this.pnlPhysical.Controls.Add(this.txtPhonNum);
+            this.pnlPhysical.Controls.Add(this.label6);
+            this.pnlPhysical.Controls.Add(this.label4);
+            this.pnlPhysical.Controls.Add(this.txtSupplierNamePy);
+            this.pnlPhysical.Location = new System.Drawing.Point(513, 368);
+            this.pnlPhysical.Name = "pnlPhysical";
+            this.pnlPhysical.Size = new System.Drawing.Size(431, 103);
+            this.pnlPhysical.TabIndex = 21;
+            this.pnlPhysical.Visible = false;
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.BackColor = System.Drawing.Color.Transparent;
+            this.label5.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(130)))), ((int)(((byte)(123)))), ((int)(((byte)(123)))));
+            this.label5.Location = new System.Drawing.Point(13, 61);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(126, 19);
+            this.label5.TabIndex = 22;
+            this.label5.Text = "Phone Number\r\n";
+            // 
+            // txtPhonNum
+            // 
+            this.txtPhonNum.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtPhonNum.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtPhonNum.Location = new System.Drawing.Point(158, 62);
+            this.txtPhonNum.Name = "txtPhonNum";
+            this.txtPhonNum.Size = new System.Drawing.Size(258, 19);
+            this.txtPhonNum.TabIndex = 21;
+            this.txtPhonNum.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtPhonNum_KeyPress);
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.BackColor = System.Drawing.Color.Transparent;
+            this.label6.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(130)))), ((int)(((byte)(123)))), ((int)(((byte)(123)))));
+            this.label6.Location = new System.Drawing.Point(14, 18);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(125, 19);
+            this.label6.TabIndex = 22;
+            this.label6.Text = "Supplier Name";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.BackColor = System.Drawing.Color.Transparent;
+            this.label4.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(130)))), ((int)(((byte)(123)))), ((int)(((byte)(123)))));
+            this.label4.Location = new System.Drawing.Point(14, 16);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(125, 19);
+            this.label4.TabIndex = 22;
+            this.label4.Text = "Supplier Name";
+            // 
+            // txtSupplierNamePy
+            // 
+            this.txtSupplierNamePy.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtSupplierNamePy.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtSupplierNamePy.Location = new System.Drawing.Point(159, 18);
+            this.txtSupplierNamePy.Name = "txtSupplierNamePy";
+            this.txtSupplierNamePy.Size = new System.Drawing.Size(258, 19);
+            this.txtSupplierNamePy.TabIndex = 21;
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.BackColor = System.Drawing.Color.Transparent;
+            this.label8.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Bold);
+            this.label8.ForeColor = System.Drawing.Color.White;
+            this.label8.Location = new System.Drawing.Point(300, 375);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(85, 23);
+            this.label8.TabIndex = 24;
+            this.label8.Text = "Supplier";
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Bold);
+            this.label7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(130)))), ((int)(((byte)(123)))), ((int)(((byte)(123)))));
+            this.label7.Location = new System.Drawing.Point(72, 268);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(136, 23);
+            this.label7.TabIndex = 23;
+            this.label7.Text = "Upload Photo";
+            // 
+            // pcboxProductPhoto
+            // 
+            this.pcboxProductPhoto.BackColor = System.Drawing.Color.Transparent;
+            this.pcboxProductPhoto.Location = new System.Drawing.Point(53, 93);
+            this.pcboxProductPhoto.Name = "pcboxProductPhoto";
+            this.pcboxProductPhoto.Size = new System.Drawing.Size(170, 155);
+            this.pcboxProductPhoto.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pcboxProductPhoto.TabIndex = 22;
+            this.pcboxProductPhoto.TabStop = false;
+            // 
+            // txtThreshold
+            // 
+            this.txtThreshold.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtThreshold.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtThreshold.ForeColor = System.Drawing.Color.DarkGray;
+            this.txtThreshold.Location = new System.Drawing.Point(768, 315);
+            this.txtThreshold.Name = "txtThreshold";
+            this.txtThreshold.Size = new System.Drawing.Size(164, 20);
+            this.txtThreshold.TabIndex = 20;
+            this.txtThreshold.Text = "Enter Item Threshold";
+            this.txtThreshold.Click += new System.EventHandler(this.txtThreshold_Click);
+            this.txtThreshold.TextChanged += new System.EventHandler(this.txtThreshold_TextChanged);
+            this.txtThreshold.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtThreshold_KeyPress);
+            this.txtThreshold.Leave += new System.EventHandler(this.txtThreshold_Leave);
+            // 
+            // txtPrice
+            // 
+            this.txtPrice.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtPrice.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtPrice.ForeColor = System.Drawing.Color.DarkGray;
+            this.txtPrice.Location = new System.Drawing.Point(610, 315);
+            this.txtPrice.Name = "txtPrice";
+            this.txtPrice.Size = new System.Drawing.Size(103, 20);
+            this.txtPrice.TabIndex = 20;
+            this.txtPrice.Text = "Enter Price";
+            this.txtPrice.Click += new System.EventHandler(this.txtPrice_Click);
+            this.txtPrice.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtPrice_KeyPress);
+            this.txtPrice.Leave += new System.EventHandler(this.txtPrice_Leave);
+            // 
+            // txtUnit
+            // 
+            this.txtUnit.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtUnit.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtUnit.ForeColor = System.Drawing.Color.DarkGray;
+            this.txtUnit.Location = new System.Drawing.Point(469, 315);
+            this.txtUnit.Name = "txtUnit";
+            this.txtUnit.Size = new System.Drawing.Size(115, 20);
+            this.txtUnit.TabIndex = 20;
+            this.txtUnit.Text = "Enter Unit";
+            this.txtUnit.Click += new System.EventHandler(this.txtUnit_Click);
+            this.txtUnit.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtUnit_KeyPress);
+            this.txtUnit.Leave += new System.EventHandler(this.txtUnit_Leave);
+            // 
+            // txtQuantity
+            // 
+            this.txtQuantity.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtQuantity.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtQuantity.ForeColor = System.Drawing.Color.DarkGray;
+            this.txtQuantity.Location = new System.Drawing.Point(304, 315);
+            this.txtQuantity.Name = "txtQuantity";
+            this.txtQuantity.Size = new System.Drawing.Size(130, 20);
+            this.txtQuantity.TabIndex = 20;
+            this.txtQuantity.Text = "Enter Quantity";
+            this.txtQuantity.Click += new System.EventHandler(this.txtQuantity_Click);
+            this.txtQuantity.TextChanged += new System.EventHandler(this.txtQuantity_TextChanged);
+            this.txtQuantity.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtQuantity_KeyPress);
+            this.txtQuantity.Leave += new System.EventHandler(this.txtQuantity_Leave);
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.BackColor = System.Drawing.Color.Transparent;
+            this.label3.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(130)))), ((int)(((byte)(123)))), ((int)(((byte)(123)))));
+            this.label3.Location = new System.Drawing.Point(291, 91);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(143, 23);
+            this.label3.TabIndex = 19;
+            this.label3.Text = "Product Name";
+            // 
+            // pnlOnline
+            // 
+            this.pnlOnline.BackgroundImage = global::IDMS.Properties.Resources.Untitled_design__50_;
+            this.pnlOnline.Controls.Add(this.label9);
+            this.pnlOnline.Controls.Add(this.textBox9);
+            this.pnlOnline.Controls.Add(this.txtLink);
+            this.pnlOnline.Controls.Add(this.txtSupplierNameOL);
+            this.pnlOnline.Location = new System.Drawing.Point(513, 368);
+            this.pnlOnline.Name = "pnlOnline";
+            this.pnlOnline.Size = new System.Drawing.Size(431, 103);
+            this.pnlOnline.TabIndex = 18;
+            this.pnlOnline.Visible = false;
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.BackColor = System.Drawing.Color.Transparent;
+            this.label9.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(130)))), ((int)(((byte)(123)))), ((int)(((byte)(123)))));
+            this.label9.Location = new System.Drawing.Point(14, 18);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(125, 19);
+            this.label9.TabIndex = 23;
+            this.label9.Text = "Supplier Name";
+            // 
+            // textBox9
+            // 
+            this.textBox9.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBox9.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox9.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(130)))), ((int)(((byte)(123)))), ((int)(((byte)(123)))));
+            this.textBox9.Location = new System.Drawing.Point(3, 60);
+            this.textBox9.Name = "textBox9";
+            this.textBox9.Size = new System.Drawing.Size(136, 20);
+            this.textBox9.TabIndex = 20;
+            this.textBox9.Text = "Link for Stock";
+            this.textBox9.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            // 
+            // txtLink
+            // 
+            this.txtLink.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtLink.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtLink.Location = new System.Drawing.Point(158, 61);
+            this.txtLink.Name = "txtLink";
+            this.txtLink.Size = new System.Drawing.Size(258, 19);
+            this.txtLink.TabIndex = 21;
+            // 
+            // txtSupplierNameOL
+            // 
+            this.txtSupplierNameOL.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtSupplierNameOL.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtSupplierNameOL.Location = new System.Drawing.Point(158, 17);
+            this.txtSupplierNameOL.Name = "txtSupplierNameOL";
+            this.txtSupplierNameOL.Size = new System.Drawing.Size(258, 19);
+            this.txtSupplierNameOL.TabIndex = 21;
+            // 
+            // txtProductName
+            // 
+            this.txtProductName.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtProductName.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtProductName.Location = new System.Drawing.Point(459, 92);
+            this.txtProductName.Name = "txtProductName";
+            this.txtProductName.Size = new System.Drawing.Size(471, 24);
+            this.txtProductName.TabIndex = 16;
+            // 
+            // dgvProducts
+            // 
+            this.dgvProducts.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dgvProducts.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCellsExceptHeaders;
+            this.dgvProducts.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(174)))), ((int)(((byte)(213)))), ((int)(((byte)(255)))));
+            this.dgvProducts.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.dgvProducts.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridViewCellStyle9.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle9.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle9.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle9.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle9.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle9.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle9.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgvProducts.DefaultCellStyle = dataGridViewCellStyle9;
+            this.dgvProducts.Location = new System.Drawing.Point(295, 145);
+            this.dgvProducts.Name = "dgvProducts";
+            dataGridViewCellStyle10.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle10.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle10.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle10.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle10.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle10.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle10.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvProducts.RowHeadersDefaultCellStyle = dataGridViewCellStyle10;
+            this.dgvProducts.Size = new System.Drawing.Size(649, 143);
+            this.dgvProducts.TabIndex = 14;
+            // 
+            // btnAdd
+            // 
+            this.btnAdd.BackColor = System.Drawing.Color.Transparent;
+            this.btnAdd.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAdd.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAdd.ForeColor = System.Drawing.Color.White;
+            this.btnAdd.Location = new System.Drawing.Point(788, 564);
+            this.btnAdd.Name = "btnAdd";
+            this.btnAdd.Size = new System.Drawing.Size(156, 56);
+            this.btnAdd.TabIndex = 11;
+            this.btnAdd.Text = "Add to Stock";
+            this.btnAdd.UseVisualStyleBackColor = false;
+            this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
+            // 
+            // btnCancel
+            // 
+            this.btnCancel.BackColor = System.Drawing.Color.Transparent;
+            this.btnCancel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnCancel.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCancel.ForeColor = System.Drawing.Color.White;
+            this.btnCancel.Location = new System.Drawing.Point(618, 564);
+            this.btnCancel.Name = "btnCancel";
+            this.btnCancel.Size = new System.Drawing.Size(170, 56);
+            this.btnCancel.TabIndex = 10;
+            this.btnCancel.Text = "Cancel";
+            this.btnCancel.UseVisualStyleBackColor = false;
+            this.btnCancel.Click += new System.EventHandler(this.btnCancel_Click);
+            // 
+            // txtFilename
+            // 
+            this.txtFilename.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtFilename.Enabled = false;
+            this.txtFilename.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtFilename.Location = new System.Drawing.Point(53, 313);
+            this.txtFilename.Name = "txtFilename";
+            this.txtFilename.Size = new System.Drawing.Size(170, 24);
+            this.txtFilename.TabIndex = 9;
+            // 
+            // btnBrowse
+            // 
+            this.btnBrowse.BackColor = System.Drawing.Color.Transparent;
+            this.btnBrowse.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnBrowse.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnBrowse.ForeColor = System.Drawing.Color.White;
+            this.btnBrowse.Location = new System.Drawing.Point(43, 365);
+            this.btnBrowse.Name = "btnBrowse";
+            this.btnBrowse.Size = new System.Drawing.Size(188, 40);
+            this.btnBrowse.TabIndex = 8;
+            this.btnBrowse.Text = "browse";
+            this.btnBrowse.UseVisualStyleBackColor = false;
+            this.btnBrowse.Click += new System.EventHandler(this.btnBrowse_Click);
+            // 
+            // rbtnPhysical
+            // 
+            this.rbtnPhysical.AutoSize = true;
+            this.rbtnPhysical.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(174)))), ((int)(((byte)(213)))), ((int)(((byte)(255)))));
+            this.rbtnPhysical.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rbtnPhysical.ForeColor = System.Drawing.Color.White;
+            this.rbtnPhysical.Location = new System.Drawing.Point(312, 440);
+            this.rbtnPhysical.Name = "rbtnPhysical";
+            this.rbtnPhysical.Size = new System.Drawing.Size(131, 23);
+            this.rbtnPhysical.TabIndex = 7;
+            this.rbtnPhysical.TabStop = true;
+            this.rbtnPhysical.Text = "physical store";
+            this.rbtnPhysical.UseVisualStyleBackColor = false;
+            this.rbtnPhysical.CheckedChanged += new System.EventHandler(this.rbtnPhysical_CheckedChanged);
+            // 
+            // rbtnOnline
+            // 
+            this.rbtnOnline.AutoSize = true;
+            this.rbtnOnline.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(174)))), ((int)(((byte)(213)))), ((int)(((byte)(255)))));
+            this.rbtnOnline.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rbtnOnline.ForeColor = System.Drawing.Color.White;
+            this.rbtnOnline.Location = new System.Drawing.Point(312, 408);
+            this.rbtnOnline.Name = "rbtnOnline";
+            this.rbtnOnline.Size = new System.Drawing.Size(114, 23);
+            this.rbtnOnline.TabIndex = 6;
+            this.rbtnOnline.TabStop = true;
+            this.rbtnOnline.Text = "online store";
+            this.rbtnOnline.UseVisualStyleBackColor = false;
+            this.rbtnOnline.CheckedChanged += new System.EventHandler(this.rbtnOnline_CheckedChanged);
+            // 
+            // panel7
+            // 
+            this.panel7.BackgroundImage = global::IDMS.Properties.Resources.Untitled_design__29_;
+            this.panel7.Location = new System.Drawing.Point(247, 0);
+            this.panel7.Name = "panel7";
+            this.panel7.Size = new System.Drawing.Size(1035, 43);
+            this.panel7.TabIndex = 4;
+            // 
             // ManageSupply_Add_form
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -690,16 +747,11 @@
             this.Controls.Add(this.panel8);
             this.Controls.Add(this.panel7);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "ManageSupply_Add_form";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "ManageSupply_Add_form";
-            this.panel8.ResumeLayout(false);
-            this.panel8.PerformLayout();
-            this.panel9.ResumeLayout(false);
-            this.panel9.PerformLayout();
-            this.panel10.ResumeLayout(false);
-            this.panel10.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            this.Load += new System.EventHandler(this.ManageSupply_Add_form_Load);
             this.flowLayoutPanel1.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
@@ -708,10 +760,17 @@
             this.panel14.ResumeLayout(false);
             this.panel15.ResumeLayout(false);
             this.panel16.ResumeLayout(false);
-            this.panel17.ResumeLayout(false);
             this.panel18.ResumeLayout(false);
             this.panel19.ResumeLayout(false);
             this.panel21.ResumeLayout(false);
+            this.panel8.ResumeLayout(false);
+            this.panel8.PerformLayout();
+            this.pnlPhysical.ResumeLayout(false);
+            this.pnlPhysical.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pcboxProductPhoto)).EndInit();
+            this.pnlOnline.ResumeLayout(false);
+            this.pnlOnline.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvProducts)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -719,28 +778,17 @@
         #endregion
         private System.Windows.Forms.Panel panel7;
         private System.Windows.Forms.Panel panel8;
-        private System.Windows.Forms.Panel panel9;
+        private System.Windows.Forms.Panel pnlOnline;
         private System.Windows.Forms.TextBox textBox9;
-        private System.Windows.Forms.TextBox textBox8;
-        private System.Windows.Forms.ComboBox comboBox2;
         private System.Windows.Forms.TextBox txtProductName;
-        private System.Windows.Forms.VScrollBar vScrollBar1;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView dgvProducts;
         private System.Windows.Forms.Button btnAdd;
         private System.Windows.Forms.Button btnCancel;
-        private System.Windows.Forms.TextBox textBox6;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.RadioButton radioButton2;
-        private System.Windows.Forms.RadioButton radioButton1;
-        private System.Windows.Forms.TextBox textBox5;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Panel panel10;
-        private System.Windows.Forms.TextBox textBox10;
-        private System.Windows.Forms.TextBox textBox11;
+        private System.Windows.Forms.TextBox txtFilename;
+        private System.Windows.Forms.Button btnBrowse;
+        private System.Windows.Forms.RadioButton rbtnPhysical;
+        private System.Windows.Forms.RadioButton rbtnOnline;
+        private System.Windows.Forms.Panel pnlPhysical;
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.PictureBox pictureBox1;
@@ -754,8 +802,6 @@
         private System.Windows.Forms.Button btnCustomers;
         private System.Windows.Forms.Panel panel16;
         private System.Windows.Forms.Button btnEmployees;
-        private System.Windows.Forms.Panel panel17;
-        private System.Windows.Forms.Button btnReports;
         private System.Windows.Forms.Panel panel18;
         private System.Windows.Forms.Button button5;
         private System.Windows.Forms.Panel panel19;
@@ -763,7 +809,22 @@
         private System.Windows.Forms.Panel panel20;
         private System.Windows.Forms.Panel panel21;
         private System.Windows.Forms.Button btnLogout;
-        private System.Windows.Forms.TextBox txtSupplierName;
-        private System.Windows.Forms.TextBox txtPhoneNumber;
+        private System.Windows.Forms.TextBox txtSupplierNamePy;
+        private System.Windows.Forms.TextBox txtPhonNum;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.TextBox txtThreshold;
+        private System.Windows.Forms.TextBox txtPrice;
+        private System.Windows.Forms.TextBox txtQuantity;
+        private System.Windows.Forms.TextBox txtUnit;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.TextBox txtSupplierNameOL;
+        private System.Windows.Forms.TextBox txtLink;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.PictureBox pcboxProductPhoto;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.Label label10;
     }
 }
